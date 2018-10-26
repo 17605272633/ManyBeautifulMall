@@ -1,69 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f52597a-5f34-4acb-8203-0049c9301dee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/migrations/0002_user_email_active.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/settings/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/ytx_sdk/CCPRestSDK.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/ytx_sdk/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/ytx_sdk/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/ytx_sdk/sendSMS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/ytx_sdk/xmltojson.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/celery_tasks/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/celery_tasks/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/celery_tasks/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/celery_tasks/sms/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/celery_tasks/sms/tasks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/meiduo.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ManyBeautiful.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ManyBeautiful.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManyBeautiful/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManyBeautiful/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManyBeautiful/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManyBeautiful/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-    </list>
+    <list default="true" id="3f52597a-5f34-4acb-8203-0049c9301dee" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,12 +18,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="3" />
+          <entry key="py" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="3" />
+          <entry key="Python" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="txt" value="45" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="45" />
         </counts>
       </usages-collector>
     </session>
@@ -102,11 +50,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+            <state relative-caret-position="725">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="12" column="79" lean-forward="true" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -146,6 +103,12 @@
               <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
               <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
               <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
+              <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
@@ -218,23 +181,31 @@
       <option name="presentableId" value="Default" />
       <updated>1540555350803</updated>
     </task>
+    <task id="LOCAL-00001" summary="用户注册实现,JWT代替session实现状态保存,qq登陆实现,用户个人信息页实现">
+      <created>1540556303789</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540556303789</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="144" y="65" width="1769" height="809" extended-state="0" />
+    <frame x="65" y="-4" width="1851" height="893" extended-state="6" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24956572" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23825318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.2935065" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32944608" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32944608" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -252,6 +223,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="用户注册实现,JWT代替session实现状态保存,qq登陆实现,用户个人信息页实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="用户注册实现,JWT代替session实现状态保存,qq登陆实现,用户个人信息页实现" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ManyBeautiful/settings.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -267,8 +242,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+        <state relative-caret-position="725">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="12" column="79" lean-forward="true" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
         </state>
       </provider>
     </entry>
