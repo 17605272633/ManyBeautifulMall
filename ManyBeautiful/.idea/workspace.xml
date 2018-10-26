@@ -1,8 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36392037-fb7d-4a8f-95a1-d28ba78fee31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3f52597a-5f34-4acb-8203-0049c9301dee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/migrations/0002_user_email_active.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/settings/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/ytx_sdk/CCPRestSDK.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/ytx_sdk/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/ytx_sdk/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/ytx_sdk/sendSMS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/ytx_sdk/xmltojson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/celery_tasks/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/celery_tasks/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/celery_tasks/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/celery_tasks/sms/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/celery_tasks/sms/tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/meiduo.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ManyBeautiful.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ManyBeautiful.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManyBeautiful/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManyBeautiful/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManyBeautiful/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManyBeautiful/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,15 +70,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
-    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
-  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1194299951">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.34" value="1" />
           <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -26,15 +93,20 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ManyBeautiful/settings.py">
+        <entry file="file://$PROJECT_DIR$/celery_tasks/sms/tasks.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ManyBeautiful/urls.py">
+        <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="493">
+              <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -51,14 +123,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="735" />
-    <option name="height" value="693" />
+    <option name="x" value="144" />
+    <option name="y" value="37" />
+    <option name="width" value="1769" />
+    <option name="height" value="837" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -72,6 +142,17 @@
               <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
               <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
+              <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
+              <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -82,7 +163,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -126,25 +212,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="36392037-fb7d-4a8f-95a1-d28ba78fee31" name="Default Changelist" comment="" />
-      <created>1540529075105</created>
+      <changelist id="3f52597a-5f34-4acb-8203-0049c9301dee" name="Default Changelist" comment="" />
+      <created>1540555350803</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1540529075105</updated>
+      <updated>1540555350803</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1851" height="893" extended-state="6" />
+    <frame x="144" y="65" width="1769" height="809" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18629077" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24956572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32987013" />
+      <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -171,9 +257,18 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ManyBeautiful/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/celery_tasks/sms/tasks.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="493">
+          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
         </state>
       </provider>
     </entry>
