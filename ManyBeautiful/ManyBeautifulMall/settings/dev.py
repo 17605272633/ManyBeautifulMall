@@ -255,7 +255,7 @@ AUTHENTICATION_BACKENDS = [
 
 # QQ登陆参数
 # 申请QQ登录成功后，分配给应用的appid。
-QQ_CLIENT_ID = ''
+QQ_CLIENT_ID = '101474184'
 # 申请QQ登录成功后，分配给网站的appkey
 QQ_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'
 # 成功授权后的回调地址，必须是注册appid时填写的主域名下的地址
@@ -263,6 +263,11 @@ QQ_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'
 QQ_STATE = '/'
 
 
-
-
-
+# # 微信登陆参数
+# # 申请微信登录成功后，分配给应用的appid。
+# WEIXIN_CLIENT_ID = ''
+# # 申请微信登录成功后，分配给网站的appkey
+# WEIXIN_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'
+# # 成功授权后的回调地址，必须是注册appid时填写的主域名下的地址
+# WEIXIN_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'
+# WEIXIN_STATE = '/'

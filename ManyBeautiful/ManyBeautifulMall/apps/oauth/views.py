@@ -5,15 +5,17 @@ from rest_framework_jwt.settings import api_settings
 from oauth.exceptions import QQAPIError
 from oauth.models import OAuthQQUser
 from oauth.serializers import OAuthQQUserSerializer
-from oauth.utils import OAuthQQ
+from oauth.utils import *
 
 
 class QQAuthURLView(APIView):
-    """获取用户登录的url"""
+    """获取QQ用户登录的url"""
 
     def get(self, request):
         """
-        请求方式: GET /oauth/qq/authorization/?next=xxx
+        点击qq登陆,绑定的路由为/qq/authorization/?next=/, 路由绑定了此视图函数,视图函数返回json形式的,带参数的地址,客户端跳转此地址
+
+        请求地址: GET
         提供用于qq登录的url
         :param request: 包含: next 用户QQ登录成功后进入美多商城的哪个网址
         :return: {
@@ -38,14 +40,16 @@ class QQAuthUserView(APIView):
         :return: response响应
         """
 
+        oauth = OAuthQQ()
+
         # 获取QQ返回的授权凭证
-        code = request.query_params.get('code')
+        code = oauth.get_code(request.query_params)
+
+        # code = request.query_params.get('code')
         if not code:
             return Response({'message': '缺少code'}, status=status.HTTP_400_BAD_REQUEST)
 
-        oauth = OAuthQQ()
-
-        # 获取用户的openid
+        # 获取用户的access_token, openid
         try:
             access_token = oauth.get_access_token(code)
             openid = oauth.get_open_id(access_token)
@@ -88,7 +92,7 @@ class QQAuthUserView(APIView):
                 }
         """
         serializer = OAuthQQUserSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
+        serializer.is_valid()
         user = serializer.save()
 
         response = Response({
@@ -97,3 +101,26 @@ class QQAuthUserView(APIView):
             'username': user.username
         })
         return response
+
+
+# class WeiXinAuthURLView(APIView):
+#     """获取微信用户登录的url"""
+#
+#     def get(self, request):
+#         """
+#         点击微信登陆,绑定的路由为/微信/authorization/?next=/, 路由绑定了此视图函数,视图函数返回json形式的,带参数的地址,客户端跳转此地址
+#
+#         请求地址: GET
+#         提供用于qq登录的url
+#         :param request: 包含: next 用户QQ登录成功后进入美多商城的哪个网址
+#         :return: {
+#                     "login_url": 'https://open.weixin.qq.com/connect/qrconnect?' + urlencode(params)
+#                 }
+#         """
+#
+#         next = request.query_params.get('next')
+#         oauth = OAuthWeiXin(state=next)
+#         login_url = oauth.get_weixin_login_url()
+#
+#         return Response({'login_url': login_url})
+#

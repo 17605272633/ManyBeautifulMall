@@ -565,3 +565,659 @@ INFO 2018-10-26 20:10:20,824 basehttp 124 "GET /user/ HTTP/1.1" 200 85
 INFO 2018-10-26 20:10:20,890 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
 WARNING 2018-10-26 20:10:20,924 base 152 Not Found: /browse_histories/
 WARNING 2018-10-26 20:10:20,927 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3158
+INFO 2018-10-27 00:15:25,596 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 166
+INFO 2018-10-27 00:15:25,981 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 166
+INFO 2018-10-27 00:15:35,492 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 166
+WARNING 2018-10-27 00:22:45,071 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:45,076 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:46,256 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:46,259 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:47,350 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:47,356 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:47,513 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:47,515 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:47,681 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:47,688 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:47,855 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:47,865 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:48,057 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:48,060 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:48,164 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:48,167 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:48,360 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:48,367 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:48,548 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:48,557 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:48,627 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:48,631 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:48,846 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:48,849 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:49,012 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:49,018 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:49,088 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:49,093 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:49,274 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:49,278 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:49,465 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:49,479 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:49,559 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:49,568 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:55,176 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:55,178 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:56,384 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:56,392 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:56,806 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:56,809 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:57,637 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:57,645 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:58,488 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:58,495 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:59,286 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:59,292 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+WARNING 2018-10-27 00:22:59,583 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-27 00:22:59,586 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3240
+INFO 2018-10-27 00:23:23,477 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 166
+INFO 2018-10-27 09:57:36,716 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 166
+INFO 2018-10-27 10:15:08,024 basehttp 124 "GET /oauth/weixin/authorization/?next=/ HTTP/1.1" 200 166
+INFO 2018-10-27 10:19:15,433 basehttp 124 "GET /oauth/weixin/authorization/?next=/ HTTP/1.1" 200 166
+INFO 2018-10-27 10:19:27,284 basehttp 124 "GET /oauth/weixin/authorization/?next=/ HTTP/1.1" 200 166
+INFO 2018-10-27 10:20:20,360 basehttp 124 "GET /oauth/weixin/authorization/?next=/ HTTP/1.1" 200 171
+INFO 2018-10-27 10:39:07,110 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2018-10-27 10:39:30,005 basehttp 124 "GET /oauth/qq/user/?code=049AA177AAF11B3022CF45AD3ACDB8E5 HTTP/1.1" 200 233
+INFO 2018-10-27 10:39:47,765 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+INFO 2018-10-27 10:40:10,503 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2018-10-27 10:40:10,743 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'access_token' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 96, in post
+    user = serializer.save()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the OAuthQQUserSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'access_token' is an invalid keyword argument for this function
+
+ERROR 2018-10-27 10:40:11,250 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 23143
+INFO 2018-10-27 11:02:27,401 basehttp 124 "GET /oauth/qq/user/?code=5C314A586B2143B32FBF6059F3D99E65 HTTP/1.1" 200 233
+INFO 2018-10-27 11:02:38,440 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+INFO 2018-10-27 11:02:49,012 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2018-10-27 11:02:49,106 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 96, in post
+    user = serializer.save()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the OAuthQQUserSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+ERROR 2018-10-27 11:02:49,262 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 23131
+ERROR 2018-10-27 11:03:13,323 exceptions 28 [<oauth.views.QQAuthUserView object at 0x7fed66526128>] (1062, "Duplicate entry '17605272633' for key 'mobile'")
+ERROR 2018-10-27 11:03:13,326 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 507 35
+ERROR 2018-10-27 11:03:16,316 utils 78 code=None msg=None
+ERROR 2018-10-27 11:03:16,317 basehttp 124 "GET /oauth/qq/user/?code=5C314A586B2143B32FBF6059F3D99E65 HTTP/1.1" 503 28
+INFO 2018-10-27 11:03:32,943 basehttp 124 "GET /oauth/qq/user/?code=29F2F737851C73285F65E56BDBD75092 HTTP/1.1" 200 233
+INFO 2018-10-27 11:04:16,891 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+ERROR 2018-10-27 11:04:26,395 exceptions 28 [<oauth.views.QQAuthUserView object at 0x7fed64897e48>] (1062, "Duplicate entry '17605272633' for key 'mobile'")
+ERROR 2018-10-27 11:04:26,396 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 507 35
+ERROR 2018-10-27 11:05:27,247 exceptions 28 [<oauth.views.QQAuthUserView object at 0x7fed65a23e80>] (1062, "Duplicate entry '17605272633' for key 'mobile'")
+ERROR 2018-10-27 11:05:27,310 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 507 35
+INFO 2018-10-27 11:07:29,873 basehttp 124 "GET /oauth/qq/user/?code=03434B359E5FEDA6A9B9A3CE5972FF3D HTTP/1.1" 200 233
+INFO 2018-10-27 11:07:38,017 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+ERROR 2018-10-27 11:08:00,530 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 95, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/serializers.py", line 121, in validate
+    openid = OAuthQQ.check_seve_user_token(access_token)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/utils.py", line 131, in check_seve_user_token
+    serializer = Serializer(settings.SERCET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'SERCET_KEY'
+ERROR 2018-10-27 11:08:00,656 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19981
+INFO 2018-10-27 11:15:19,743 basehttp 124 "GET /oauth/qq/user/?code=356D7BBED7FFD5457C88A4301A718172 HTTP/1.1" 200 233
+INFO 2018-10-27 11:15:26,932 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+INFO 2018-10-27 11:15:37,911 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2018-10-27 11:15:37,929 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 95, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/serializers.py", line 41, in validate
+    openid = OAuthQQ.check_seve_user_token(access_token)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/utils.py", line 131, in check_seve_user_token
+    serializer = Serializer(settings.SERCET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'SERCET_KEY'
+ERROR 2018-10-27 11:15:38,022 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19980
+INFO 2018-10-27 11:23:10,652 basehttp 124 "GET /oauth/qq/user/?code=D8167C39FF3E11ECE1E216B9AC01F6F9 HTTP/1.1" 200 233
+INFO 2018-10-27 11:23:17,704 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+ERROR 2018-10-27 11:23:35,304 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 95, in post
+    serializer.is_valid()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/serializers.py", line 51, in validate
+    openid = OAuthQQ.check_seve_user_token(access_token)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/utils.py", line 131, in check_seve_user_token
+    serializer = Serializer(settings.SERCET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'SERCET_KEY'
+ERROR 2018-10-27 11:23:35,365 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19960
+ERROR 2018-10-27 11:24:25,855 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 95, in post
+    serializer.is_valid()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/serializers.py", line 51, in validate
+    openid = OAuthQQ.check_seve_user_token(access_token)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/utils.py", line 131, in check_seve_user_token
+    serializer = Serializer(settings.SERCET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'SERCET_KEY'
+ERROR 2018-10-27 11:24:25,895 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19960
+ERROR 2018-10-27 11:24:47,184 utils 78 code=None msg=None
+ERROR 2018-10-27 11:24:47,186 basehttp 124 "GET /oauth/qq/user/?code=D8167C39FF3E11ECE1E216B9AC01F6F9 HTTP/1.1" 503 28
+INFO 2018-10-27 11:25:03,603 basehttp 124 "GET /oauth/qq/user/?code=3C41BC290F43AAD85CE85CE2C616F778 HTTP/1.1" 200 233
+INFO 2018-10-27 11:25:13,462 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+ERROR 2018-10-27 11:25:19,221 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 95, in post
+    serializer.is_valid()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/serializers.py", line 51, in validate
+    openid = OAuthQQ.check_seve_user_token(access_token)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/utils.py", line 131, in check_seve_user_token
+    serializer = Serializer(settings.SERCET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'SERCET_KEY'
+ERROR 2018-10-27 11:25:19,249 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19960
+INFO 2018-10-27 11:26:08,203 basehttp 124 "GET /oauth/qq/user/?code=03FA641160D7A63F562BC8B909CCCC30 HTTP/1.1" 200 233
+INFO 2018-10-27 11:26:13,888 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+INFO 2018-10-27 11:26:20,136 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2018-10-27 11:26:20,147 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 95, in post
+    serializer.is_valid()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/serializers.py", line 51, in validate
+    openid = OAuthQQ.check_seve_user_token(access_token)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/utils.py", line 131, in check_seve_user_token
+    serializer = Serializer(settings.SERCET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'SERCET_KEY'
+ERROR 2018-10-27 11:26:20,213 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19960
+ERROR 2018-10-27 11:27:30,233 utils 102 code=None msg=None
+ERROR 2018-10-27 11:27:30,239 basehttp 124 "GET /oauth/qq/user/?code=D9BD77FF087E5007E4A0413F5024DA31 HTTP/1.1" 503 28
+ERROR 2018-10-27 11:27:35,716 utils 78 code=None msg=None
+ERROR 2018-10-27 11:27:35,721 basehttp 124 "GET /oauth/qq/user/?code=D9BD77FF087E5007E4A0413F5024DA31 HTTP/1.1" 503 28
+ERROR 2018-10-27 11:27:51,057 utils 102 code=None msg=None
+ERROR 2018-10-27 11:27:51,063 basehttp 124 "GET /oauth/qq/user/?code=2E383DCF2E97A61B9FD69F1CB152CB92 HTTP/1.1" 503 28
+INFO 2018-10-27 11:28:37,833 basehttp 124 "GET /oauth/qq/user/?code=6A63EA16BC70E3ABC98EFE63E8ABECEB HTTP/1.1" 200 233
+ERROR 2018-10-27 11:29:14,836 utils 102 code=None msg=None
+ERROR 2018-10-27 11:29:14,842 basehttp 124 "GET /oauth/qq/user/?code=B15E398F62ADE9BA0DF7F4705AA14701 HTTP/1.1" 503 28
+ERROR 2018-10-27 11:29:54,122 utils 103 code=None msg=None
+ERROR 2018-10-27 11:29:54,196 basehttp 124 "GET /oauth/qq/user/?code=12846107731147E97E9F552934FB4B96 HTTP/1.1" 503 28
+INFO 2018-10-27 11:30:24,962 basehttp 124 "GET /oauth/qq/user/?code=57EBB66190D7FE46249CA8741C3A99F2 HTTP/1.1" 200 233
+INFO 2018-10-27 11:32:09,546 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+ERROR 2018-10-27 11:32:16,459 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 95, in post
+    serializer.is_valid()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/serializers.py", line 51, in validate
+    openid = OAuthQQ.check_seve_user_token(access_token)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/utils.py", line 132, in check_seve_user_token
+    serializer = Serializer(settings.SERCET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'SERCET_KEY'
+ERROR 2018-10-27 11:32:16,529 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19960
+INFO 2018-10-27 11:33:24,887 basehttp 124 "GET /oauth/qq/user/?code=1C84814824D0AA40141C905673FD2769 HTTP/1.1" 200 233
+INFO 2018-10-27 11:33:33,388 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+ERROR 2018-10-27 11:33:39,821 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 95, in post
+    serializer.is_valid()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/serializers.py", line 51, in validate
+    openid = OAuthQQ.check_seve_user_token(access_token)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/utils.py", line 132, in check_seve_user_token
+    serializer = Serializer(settings.SERCET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'SERCET_KEY'
+ERROR 2018-10-27 11:33:39,926 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19960
+INFO 2018-10-27 11:34:13,872 basehttp 124 "GET /oauth/qq/user/?code=E02CC589B4EE9F5F2FD35EEE16FBA158 HTTP/1.1" 200 233
+WARNING 2018-10-27 11:34:25,389 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:34:29,789 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:34:31,238 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:34:31,643 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:34:31,922 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:34:32,090 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:34:32,259 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:34:32,410 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:34:32,577 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:34:32,731 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:34:32,899 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:34:33,061 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:34:33,250 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+INFO 2018-10-27 11:34:33,492 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+ERROR 2018-10-27 11:34:40,936 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 95, in post
+    serializer.is_valid()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/serializers.py", line 52, in validate
+    openid = OAuthQQ.check_seve_user_token(access_token)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/utils.py", line 132, in check_seve_user_token
+    serializer = Serializer(settings.SERCET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'SERCET_KEY'
+ERROR 2018-10-27 11:34:41,005 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19960
+INFO 2018-10-27 11:35:29,739 basehttp 124 "GET /oauth/qq/user/?code=7DD2E070C3D014C0B84B695A0ED043EA HTTP/1.1" 200 233
+INFO 2018-10-27 11:35:37,819 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+ERROR 2018-10-27 11:35:43,449 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 95, in post
+    serializer.is_valid()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/serializers.py", line 52, in validate
+    openid = OAuthQQ.check_seve_user_token(access_token)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/utils.py", line 132, in check_seve_user_token
+    serializer = Serializer(settings.SERCET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'SERCET_KEY'
+ERROR 2018-10-27 11:35:43,541 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19960
+INFO 2018-10-27 11:36:17,566 basehttp 124 "GET /oauth/qq/user/?code=F1D6279096C00B696A1C4D5D025CCFB2 HTTP/1.1" 200 233
+WARNING 2018-10-27 11:36:27,518 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:36:30,545 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:36:31,655 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:36:36,207 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:36:36,985 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 11:36:37,519 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+INFO 2018-10-27 11:36:38,048 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+INFO 2018-10-27 11:36:45,197 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2018-10-27 11:36:45,213 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 95, in post
+    serializer.is_valid()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/serializers.py", line 53, in validate
+    openid = OAuthQQ.check_seve_user_token(access_token)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/utils.py", line 132, in check_seve_user_token
+    serializer = Serializer(settings.SERCET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'SERCET_KEY'
+ERROR 2018-10-27 11:36:45,273 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19960
+INFO 2018-10-27 11:37:15,784 basehttp 124 "GET /oauth/qq/user/?code=B083930225EDDC4B04BBE1131C51B3D6 HTTP/1.1" 200 233
+INFO 2018-10-27 11:40:41,212 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+ERROR 2018-10-27 11:40:50,308 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 95, in post
+    serializer.is_valid()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/serializers.py", line 52, in validate
+    openid = OAuthQQ.check_seve_user_token(access_token)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/utils.py", line 132, in check_seve_user_token
+    serializer = Serializer(settings.SERCET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'SERCET_KEY'
+ERROR 2018-10-27 11:40:50,385 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19960
+INFO 2018-10-27 11:42:13,464 basehttp 124 "GET /oauth/qq/user/?code=2DF0EB7179FE78051FA1E323B2F566D7 HTTP/1.1" 200 233
+INFO 2018-10-27 11:42:19,624 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+ERROR 2018-10-27 11:42:31,041 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 97, in post
+    user = serializer.save()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 216, in save
+    '`create()` did not return an object instance.'
+AssertionError: `create()` did not return an object instance.
+ERROR 2018-10-27 11:42:31,089 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19162
+INFO 2018-10-27 11:43:53,098 basehttp 124 "GET /oauth/qq/user/?code=C381820275D22D54727D5F19998866EE HTTP/1.1" 200 211
+INFO 2018-10-27 11:45:06,107 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2018-10-27 11:45:15,877 basehttp 124 "GET /oauth/qq/user/?code=DF8D41017483ACE3E4F97CDAF77F5AC4 HTTP/1.1" 200 233
+INFO 2018-10-27 11:45:21,773 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+INFO 2018-10-27 11:45:30,679 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 200 211
