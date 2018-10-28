@@ -1,6 +1,8 @@
 from rest_framework import serializers
 import re
 from django_redis import get_redis_connection
+
+from utils import jwt_token
 from .models import User
 from rest_framework_jwt.settings import api_settings
 
@@ -105,10 +107,11 @@ class CreateUserSerializer(serializers.Serializer):
         user.save()
 
         # 生成记录登录状态的token
-        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
-        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
-        payload = jwt_payload_handler(user)
-        token = jwt_encode_handler(payload)
+        # jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        # jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+        # payload = jwt_payload_handler(user)
+        # token = jwt_encode_handler(payload)
+        token = jwt_token.generate(user)
         user.token = token
 
         return user

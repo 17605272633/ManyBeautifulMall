@@ -1,11 +1,11 @@
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework_jwt.settings import api_settings
 from oauth.exceptions import QQAPIError
 from oauth.models import OAuthQQUser
 from oauth.serializers import OAuthQQUserSerializer
 from oauth.utils import *
+from utils import tjws, jwt_token
 
 
 class QQAuthURLView(APIView):
@@ -39,15 +39,14 @@ class QQAuthUserView(APIView):
         :param request: 包含数据的请求
         :return: response响应
         """
-
-        oauth = OAuthQQ()
-
         # 获取QQ返回的授权凭证
-        code = oauth.get_code(request.query_params)
+        # code = oauth.get_code(request.query_params)
 
-        # code = request.query_params.get('code')
+        code = request.query_params.get('code')
         if not code:
             return Response({'message': '缺少code'}, status=status.HTTP_400_BAD_REQUEST)
+
+        oauth = OAuthQQ()
 
         # 获取用户的access_token, openid
         try:
@@ -58,24 +57,25 @@ class QQAuthUserView(APIView):
 
         # 通过openid判断用户是否存在
         try:
-            qq_user = OAuthQQUser.objects.get(openid=openid)
+            qquser = OAuthQQUser.objects.get(openid=openid)
         except OAuthQQUser.DoesNotExist:  # 不报错退出
+            # 如果不存在，则通知客户端转到绑定页面
             # 用户第一次使用QQ登录
-            token = oauth.generate_save_user_token(openid)
-            return Response({'access_token': token})
+            # 将openid加密存入token中
+            token = tjws.dumps({'openid': openid}, constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+            return Response({
+                'access_token': token  # 由序列化器接收,用于解密后获取openid
+            })
 
         else:
             # 找到用户,生成token
-            user = qq_user.user
-            jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
-            jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
-            payload = jwt_payload_handler(user)
-            token = jwt_encode_handler(payload)
+            user = qquser.user
+            token = jwt_token.generate(user)
 
             response = Response({
                 'token': token,
-                'user_id': user.id,
-                'username': user.username
+                'user_id': qquser.id,
+                'username': qquser.user.username
             })
 
             return response
@@ -91,14 +91,21 @@ class QQAuthUserView(APIView):
                     'username': user.username
                 }
         """
+        # 接收数据
         serializer = OAuthQQUserSerializer(data=request.data)
-        serializer.is_valid()
-        user = serializer.save()
-
+        # 验证
+        if not serializer.is_valid():
+            return Response({'message': serializer.errors})
+        # 保存
+        qquser = serializer.save()
+        # 生成token
+        user = qquser.user
+        token = jwt_token.generate(user)
+        # 响应
         response = Response({
-            'token': user.token,
-            'user_id': user.id,
-            'username': user.username
+            'token': token,
+            'user_id': qquser.id,
+            'username': qquser.user.username
         })
         return response
 

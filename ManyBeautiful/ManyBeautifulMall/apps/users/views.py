@@ -70,11 +70,15 @@ class UserCreateView(CreateAPIView):
 
 class UserDetailView(RetrieveAPIView):
     """用户详情页类视图"""
+    # queryset = User.objects.all()
     serializer_class = UserDetailSerializer
-    # 用户认证
+    # 用户认证,用户必须登陆
     permission_classes = [IsAuthenticated]
 
-    def get_object(self):
+    # 是图中封装好的代码,是根据主键查询得到对象
+    # 根据登陆的用户,显示个人信息
+    # get_object默认根据pk查询,重写get_object
+    def get_object(self):  # self是序列化器对象,request.user代表登录用户
         return self.request.user
 
 

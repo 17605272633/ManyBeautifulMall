@@ -1221,3 +1221,185 @@ INFO 2018-10-27 11:45:06,107 basehttp 124 "GET /oauth/qq/authorization/?next=/ H
 INFO 2018-10-27 11:45:15,877 basehttp 124 "GET /oauth/qq/user/?code=DF8D41017483ACE3E4F97CDAF77F5AC4 HTTP/1.1" 200 233
 INFO 2018-10-27 11:45:21,773 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
 INFO 2018-10-27 11:45:30,679 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 200 211
+INFO 2018-10-27 15:10:28,147 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2018-10-27 15:10:42,291 basehttp 124 "GET /oauth/qq/user/?code=5A76082C5E36795D68A0E7EEEEAE8312 HTTP/1.1" 200 233
+INFO 2018-10-27 15:10:51,368 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+INFO 2018-10-27 15:11:02,558 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2018-10-27 15:11:02,845 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 200 211
+INFO 2018-10-27 15:56:01,095 basehttp 124 "GET /usernames/00000000/count/ HTTP/1.1" 200 33
+INFO 2018-10-27 15:56:38,195 basehttp 124 "GET /mobiles/17605272633/count/ HTTP/1.1" 200 34
+INFO 2018-10-27 15:56:38,906 basehttp 124 "GET /mobiles/17605272633/count/ HTTP/1.1" 200 34
+INFO 2018-10-27 15:56:39,009 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+INFO 2018-10-27 15:56:52,060 basehttp 124 "GET /usernames/00000000/count/ HTTP/1.1" 200 33
+INFO 2018-10-27 15:56:52,065 basehttp 124 "GET /mobiles/17605272633/count/ HTTP/1.1" 200 34
+INFO 2018-10-27 15:56:52,113 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-27 15:56:52,238 basehttp 124 "POST /users/ HTTP/1.1" 201 229
+INFO 2018-10-27 15:57:01,241 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2018-10-27 15:57:13,095 basehttp 124 "GET /oauth/qq/user/?code=7B2BABC4B03889C9EF629B63F2E7357A HTTP/1.1" 200 233
+WARNING 2018-10-27 15:57:19,594 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 15:57:34,986 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 15:57:36,550 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 15:57:38,156 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+WARNING 2018-10-27 15:57:38,324 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 400 28
+ERROR 2018-10-27 15:59:20,478 utils 78 code=None msg=None
+ERROR 2018-10-27 15:59:20,484 basehttp 124 "GET /oauth/qq/user/?code=7B2BABC4B03889C9EF629B63F2E7357A HTTP/1.1" 503 28
+INFO 2018-10-27 15:59:31,953 basehttp 124 "GET /oauth/qq/user/?code=137B4B5979DB7E2570906F2D2B9F5482 HTTP/1.1" 200 233
+INFO 2018-10-27 15:59:38,727 basehttp 124 "GET /sms_code/17605272633/ HTTP/1.1" 200 16
+INFO 2018-10-27 15:59:49,418 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2018-10-27 15:59:49,891 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 200 211
+INFO 2018-10-27 21:42:59,305 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+ERROR 2018-10-27 21:43:12,777 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 73, in get
+    token = jwt_token.generate(user)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/utils/jwt_token.py", line 6, in generate
+    jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/settings.py", line 216, in __getattr__
+    raise AttributeError("Invalid API setting: '%s'" % attr)
+AttributeError: Invalid API setting: 'JWT_PAYLOAD_HANDLER'
+ERROR 2018-10-27 21:43:13,286 basehttp 124 "GET /oauth/qq/user/?code=635837B5C4B828A7EDDF106AAE75747D HTTP/1.1" 500 19447
+ERROR 2018-10-27 21:44:30,702 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 78, in get
+    'username': qquser.username
+AttributeError: 'OAuthQQUser' object has no attribute 'username'
+ERROR 2018-10-27 21:44:30,766 basehttp 124 "GET /oauth/qq/user/?code=5A354AD7669046E0EE52800E082716AF HTTP/1.1" 500 19077
+INFO 2018-10-27 21:46:00,142 basehttp 124 "GET /oauth/qq/user/?code=AE38E2ADD883131EBFC18AB8F1B646DC HTTP/1.1" 200 211
+INFO 2018-10-27 21:46:09,798 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2018-10-27 21:46:40,725 basehttp 124 "GET /oauth/qq/user/?code=091ABD1227B3BC82BB8A6B59BD8AA08F HTTP/1.1" 200 233
+INFO 2018-10-27 21:47:06,755 basehttp 124 "GET /sms_code/13000000000/ HTTP/1.1" 200 16
+INFO 2018-10-27 21:47:15,195 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2018-10-27 21:47:15,679 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 108, in post
+    'username': qquser.username
+AttributeError: 'OAuthQQUser' object has no attribute 'username'
+ERROR 2018-10-27 21:47:15,731 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 18989
+ERROR 2018-10-27 21:47:19,322 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 108, in post
+    'username': qquser.username
+AttributeError: 'OAuthQQUser' object has no attribute 'username'
+ERROR 2018-10-27 21:47:19,358 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 18989
+ERROR 2018-10-27 21:47:54,501 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 60, in get
+    qquser = OAuthQQUser.objects.get(openid=openid)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/query.py", line 384, in get
+    (self.model._meta.object_name, num)
+oauth.models.MultipleObjectsReturned: get() returned more than one OAuthQQUser -- it returned 2!
+ERROR 2018-10-27 21:47:54,591 basehttp 124 "GET /oauth/qq/user/?code=BAA9D475646AFA966AE1A28FEEB8B60F HTTP/1.1" 500 19502
+INFO 2018-10-27 21:48:13,669 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+ERROR 2018-10-27 21:48:23,565 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/oauth/views.py", line 60, in get
+    qquser = OAuthQQUser.objects.get(openid=openid)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/query.py", line 384, in get
+    (self.model._meta.object_name, num)
+oauth.models.MultipleObjectsReturned: get() returned more than one OAuthQQUser -- it returned 2!
+ERROR 2018-10-27 21:48:23,612 basehttp 124 "GET /oauth/qq/user/?code=02546B636FA585BA3137F7781F2006CC HTTP/1.1" 500 19502
+INFO 2018-10-27 21:51:04,372 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2018-10-27 21:51:12,972 basehttp 124 "GET /oauth/qq/user/?code=7C3314634D1C191C83B2448B74BD3B6B HTTP/1.1" 200 233
+INFO 2018-10-27 21:51:24,344 basehttp 124 "GET /sms_code/13000000000/ HTTP/1.1" 200 16
+INFO 2018-10-27 21:51:33,820 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2018-10-27 21:51:33,978 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 200 218
