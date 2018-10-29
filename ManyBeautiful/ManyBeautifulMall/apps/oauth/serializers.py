@@ -18,31 +18,14 @@ class OAuthQQUserSerializer(serializers.Serializer):
     access_token = serializers.CharField(label='操作凭证', write_only=True)
     # token = serializers.CharField(read_only=True)
     mobile = serializers.RegexField(label='手机号', regex=r'^1[3-9]\d{9}$')
-    password = serializers.CharField(write_only=True, min_length=8, max_length=20, error_messages={
-                    'min_length': '仅允许8-20个字符的密码',
-                    'max_length': '仅允许8-20个字符的密码',
-                })
+    password = serializers.CharField(write_only=True,
+                                     min_length=8,
+                                     max_length=20,
+                                     error_messages={
+                                         'min_length': '仅允许8-20个字符的密码',
+                                         'max_length': '仅允许8-20个字符的密码',
+                                     })
 
-    # class Meta:
-    #     model = User
-    #     fields = ('mobile', 'password', 'sms_code', 'access_token', 'id', 'username', 'token')
-    #     extra_kwargs = {
-    #         'username': {
-    #             'read_only': True
-    #         },
-    #         'password': {
-    #             'write_only': True,
-    #             'min_length': 8,
-    #             'max_length': 20,
-    #             'error_messages': {
-    #                 'min_length': '仅允许8-20个字符的密码',
-    #                 'max_length': '仅允许8-20个字符的密码',
-    #             }
-    #         }
-    #
-    #     }
-
-    # 验证
     def validate(self, attrs):
 
         # 检查短信验证码
@@ -93,5 +76,3 @@ class OAuthQQUserSerializer(serializers.Serializer):
         qquser.save()
 
         return qquser
-
-

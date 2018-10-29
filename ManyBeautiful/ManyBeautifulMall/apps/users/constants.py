@@ -1,0 +1,2 @@
+# 邮箱验证链接的有效时间
+VERIFY_EMAIL_TOKEN_EXPIRES=60*60*24

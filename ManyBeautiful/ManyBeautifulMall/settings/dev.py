@@ -12,15 +12,14 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import datetime
 import os
 
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 import sys
+
 # sys.path: python解释器查找包的路径
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 sys.path.insert(0, BASE_DIR)
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -38,7 +37,6 @@ ALLOWED_HOSTS = [
     'localhost',
     'www.meiduo.site'
 ]
-
 
 # Application definition
 
@@ -87,7 +85,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ManyBeautifulMall.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
@@ -101,7 +98,6 @@ DATABASES = {
         'NAME': 'md_mall'  # 数据库名字
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -121,7 +117,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
@@ -134,7 +129,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
@@ -213,7 +207,6 @@ LOGGING = {
     }
 }
 
-
 REST_FRAMEWORK = {
     # 异常处理
     'EXCEPTION_HANDLER': 'utils.exceptions.exception_handler',
@@ -227,7 +220,6 @@ REST_FRAMEWORK = {
     ),
 }
 
-
 JWT_AUTH = {
     # 指明token的有效期
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
@@ -240,13 +232,11 @@ JWT_AUTH = {
 # 设置之后,进行数据库迁移
 AUTH_USER_MODEL = "users.User"
 
-
 # 添加白名单  写鬣域名可以访问`后端接口
 CORS_ORIGIN_WHITELIST = (
     'www.meiduo.site:8080',
 )
 CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
-
 
 # 自定义认证后端,用于登陆时的认证
 AUTHENTICATION_BACKENDS = [
@@ -262,12 +252,10 @@ QQ_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'
 QQ_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'
 QQ_STATE = '/'
 
-
-# # 微信登陆参数
-# # 申请微信登录成功后，分配给应用的appid。
-# WEIXIN_CLIENT_ID = ''
-# # 申请微信登录成功后，分配给网站的appkey
-# WEIXIN_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'
-# # 成功授权后的回调地址，必须是注册appid时填写的主域名下的地址
-# WEIXIN_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'
-# WEIXIN_STATE = '/'
+# 设置邮箱的配置信息
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = '627001516@qq.com'  # 发送邮件的邮箱
+EMAIL_HOST_PASSWORD = 'fdinztozrdtpbajd'  # 在邮箱中设置的客户端授权密码
+EMAIL_FROM = '略略略略略略<627001516@qq.com>'  # 收件人看到的发件人

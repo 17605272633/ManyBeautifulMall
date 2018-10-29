@@ -1,8 +1,8 @@
-from itsdangerous import TimedJSONWebSignatureSerializer
+from itsdangerous import TimedJSONWebSignatureSerializer, BadData
 from django.conf import settings
 
 
-def dumps(data,expires):
+def dumps(data, expires):
     """加密"""
     # 创建对象
     serializer = TimedJSONWebSignatureSerializer(settings.SECRET_KEY, expires)
@@ -20,7 +20,7 @@ def loads(data, expires):
     try:
         data_dict = serializer.loads(data)
         return data_dict
-    except:
+    except BadData:
         # 抛异常的原因：超时
         return None
 

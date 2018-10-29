@@ -2,11 +2,12 @@ from rest_framework import serializers
 import re
 from django_redis import get_redis_connection
 
+from celery_tasks.email.tasks import send_verify_email
 from utils import jwt_token
 from .models import User
-from rest_framework_jwt.settings import api_settings
 
 
+# 创建用户的序列化器
 class CreateUserSerializer(serializers.Serializer):
     """
     创建用户的序列化器
@@ -117,8 +118,44 @@ class CreateUserSerializer(serializers.Serializer):
         return user
 
 
+# 用户中心的序列化器
 class UserDetailSerializer(serializers.ModelSerializer):
-    """用户详细信息序列化器"""
+    """用户中心的序列化器"""
     class Meta:
         model = User
         fields = ('id', 'username', 'mobile', 'email', 'email_active')
+
+
+# 邮箱序列化器
+class EmailSerializer(serializers.ModelSerializer):
+    """邮箱序列化器"""
+
+    class Meta:
+        model = User
+        fields = ("id", "email")
+        extra_kwargs = {
+            'email': {
+                'required': True
+            }
+        }
+
+    def update(self, instance, validated_data):  # instance为待修改的模型类对象
+
+        instance.email = validated_data.get("email")
+        email = validated_data["email"]
+        instance.save()
+
+        # 生成验证链接(模型类调用生成链接方法)
+        verify_url = instance.generate_verify_email_url()
+        # 使用celery_tasks中定义的发短信方法,使用工人发送短息
+        send_verify_email.delay(email, verify_url)
+
+        return instance
+
+
+
+
+
+
+
+
