@@ -22,6 +22,7 @@ def loads(data, expires):
         return data_dict
     except BadData:
         # 抛异常的原因：超时
+        print("坏token")
         return None
 
 

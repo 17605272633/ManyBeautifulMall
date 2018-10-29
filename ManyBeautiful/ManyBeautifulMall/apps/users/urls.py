@@ -17,6 +17,12 @@ urlpatterns = [
     # 用户邮箱设置
     url(r'^emails/$', views.EmailView.as_view()),
     # 用户邮箱验证
-    url(r'^user/emails/verification/$', views.VerifyEmailView.as_view()),
+    url(r'^emails/verification/$', views.VerifyEmailView.as_view()),
 
 ]
+
+
+from rest_framework.routers import DefaultRouter
+router = DefaultRouter()
+router.register(r'addresses', views.AddressViewSet, base_name='addresses')
+urlpatterns += router.urls
