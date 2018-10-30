@@ -176,12 +176,12 @@ class EmailActiveSerializer(serializers.Serializer):
 class UserAddressSerializer(serializers.ModelSerializer):
     """用户地址序列化器"""
     # 定义属性
-    province = serializers.StringRelatedField(read_only=True)
-    city = serializers.StringRelatedField(read_only=True)
-    district = serializers.StringRelatedField(read_only=True)
     province_id = serializers.IntegerField(label='省ID', required=True)
     city_id = serializers.IntegerField(label='市ID', required=True)
     district_id = serializers.IntegerField(label='区ID', required=True)
+    province = serializers.StringRelatedField(read_only=True)
+    city = serializers.StringRelatedField(read_only=True)
+    district = serializers.StringRelatedField(read_only=True)
 
     class Meta:
         model = Address
@@ -194,9 +194,10 @@ class UserAddressSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError('手机号格式错误')
         return value
 
-    # 创建
+    # 创建 重写create方法
     def create(self, validated_data):
-        # 默认实现中,未指定user对象,则添加时必然报错,所以在添加之前指定user属性
+        # 创建收货地址时,需要指定user属性,
+        # 但这个值不是不是从客户端传过来的,而是获取当前登陆用户
         validated_data['user'] = self.context['request'].user
         return super().create(validated_data)
 
@@ -208,7 +209,3 @@ class AddressTitleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Address
         fields = ('title',)
-
-
-
-

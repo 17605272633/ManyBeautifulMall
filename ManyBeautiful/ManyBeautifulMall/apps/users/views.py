@@ -5,10 +5,11 @@ from rest_framework.mixins import CreateModelMixin, UpdateModelMixin
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework.viewsets import GenericViewSet
+from rest_framework.viewsets import GenericViewSet, ModelViewSet
 from users.models import User
 from users.serializers import CreateUserSerializer, UserDetailSerializer, EmailSerializer, UserAddressSerializer, \
     AddressTitleSerializer, constants, EmailActiveSerializer
+
 
 # 统计该用户名数量的类视图
 class UsernameCountView(APIView):
@@ -138,7 +139,7 @@ class VerifyEmailView(APIView):
 
 
 # 用户地址 Z S G C
-class AddressViewSet(CreateModelMixin, UpdateModelMixin, GenericViewSet):
+class AddressViewSet(ModelViewSet):
     """
     用户地址的新增于修改
     POST /addresses/ 新建  -> create
@@ -164,8 +165,9 @@ class AddressViewSet(CreateModelMixin, UpdateModelMixin, GenericViewSet):
         :return:
         """
         addr_queryset = self.get_queryset()
-        addr_serializer = self.get_serializer(addr_queryset, many=True)  # 因为是县市所有,所以要many = True
+        addr_serializer = self.get_serializer(addr_queryset, many=True)  # 因为是一对多,所以要many = True
         user = self.request.user
+        # 格式固定,因为list本身返回结果不满足js要求
         return Response({
             'user_id': user.id,
             'default_address_id': user.default_address_id,
@@ -186,12 +188,14 @@ class AddressViewSet(CreateModelMixin, UpdateModelMixin, GenericViewSet):
 
         return super().create(request, *args, **kwargs)
 
+    # 修改的update方法已在ModelViewSet中完成
+
     def destroy(self, request, *args, **kwargs):  # 等同于 DELETE 的删除
         """
-        删除用户地址数据
+        删除用户地址数据(逻辑删除)
         :return:
         """
-        # 获取用户地址数据
+        # 根据主键查询对象
         user_address = self.get_object()
 
         # 逻辑删除
@@ -226,12 +230,17 @@ class AddressViewSet(CreateModelMixin, UpdateModelMixin, GenericViewSet):
         """
         # 获取当前地址数据
         address = self.get_object()
-        addr_serializer = AddressTitleSerializer(instance=address, data=request.data)
-        if addr_serializer.is_valid() is False:
-            return Response({'message': addr_serializer.errors})
-        addr_serializer.save()
 
-        return Response(addr_serializer.data)
+        # addr_serializer = AddressTitleSerializer(instance=address, data=request.data)
+        # if addr_serializer.is_valid() is False:
+        #     return Response({'message': addr_serializer.errors})
+        # addr_serializer.save()
+        # return Response(addr_serializer.data)
+        
+        address.title = request.data.get('title')
+        address.save()
+
+        return Response({'title': address.title})
 
 
 
