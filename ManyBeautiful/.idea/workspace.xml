@@ -2,30 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f52597a-5f34-4acb-8203-0049c9301dee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/areas/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/contents/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/contents/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/contents/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/contents/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/contents/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/contents/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/contents/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/contents/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/goods/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/goods/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/goods/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/goods/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/goods/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/goods/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/goods/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/goods/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/goods_data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/fastdfs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/fastdfs/client.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/fastdfs/fdfs_storage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManyBeautifulMall/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/meiduo.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/meiduo.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,18 +55,20 @@
           <entry key="project.open.time.157" value="1" />
           <entry key="project.open.time.169" value="1" />
           <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.79" value="1" />
           <entry key="project.open.time.87" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="conf" value="2" />
           <entry key="django_migrations" value="1" />
           <entry key="html" value="4" />
           <entry key="js" value="1" />
-          <entry key="py" value="174" />
+          <entry key="py" value="177" />
           <entry key="sql" value="15" />
           <entry key="tb_address" value="2" />
           <entry key="tb_areas" value="6" />
@@ -102,7 +85,8 @@
           <entry key="Database Element" value="37" />
           <entry key="HTML" value="4" />
           <entry key="JavaScript" value="1" />
-          <entry key="Python" value="174" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="177" />
           <entry key="SQL" value="3" />
           <entry key="Scratch" value="12" />
         </counts>
@@ -110,8 +94,9 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="5" />
+          <entry key="conf" value="10" />
           <entry key="js" value="17" />
-          <entry key="py" value="9040" />
+          <entry key="py" value="9738" />
           <entry key="sql" value="68" />
           <entry key="txt" value="94" />
         </counts>
@@ -119,8 +104,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="17" />
-          <entry key="PLAIN_TEXT" value="94" />
-          <entry key="Python" value="9040" />
+          <entry key="PLAIN_TEXT" value="104" />
+          <entry key="Python" value="9738" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="72" />
         </counts>
@@ -130,7 +115,39 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/utils/fastdfs/client.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/utils/fastdfs/fdfs_storage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+              <folding>
+                <element signature="e#18#50#0" expanded="true" />
+                <marker date="1541002325182" expanded="true" signature="242:1138" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="279" lean-forward="true" selection-start-line="279" selection-end-line="279" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -180,7 +197,6 @@
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/areas/models.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/goods/apps.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/goods/models.py" />
-        <option value="$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/contents/models.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/users/serializers.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py" />
@@ -188,6 +204,9 @@
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/goods/urls.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/urls.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8bc071d9-9aae-4655-9c3a-420957c9b1f4/console_5.sql" />
+        <option value="$PROJECT_DIR$/ManyBeautifulMall/utils/fastdfs/client.conf" />
+        <option value="$PROJECT_DIR$/ManyBeautifulMall/utils/fastdfs/fdfs_storage.py" />
+        <option value="$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py" />
       </list>
     </option>
   </component>
@@ -198,10 +217,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
+    <option name="x" value="91" />
     <option name="y" value="24" />
-    <option name="width" value="1226" />
-    <option name="height" value="821" />
+    <option name="width" value="1224" />
+    <option name="height" value="785" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -222,52 +241,7 @@
             <path>
               <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
               <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
-              <item name="celery_tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
-              <item name="celery_tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="email" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
               <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
-              <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
-              <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="areas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
-              <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="contents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
-              <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="goods" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
-              <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
@@ -278,7 +252,15 @@
             <path>
               <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
               <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
+              <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="fastdfs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -296,12 +278,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/ManyBeautifulMall/utils" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ManyBeautifulMall/utils/fastdfs" />
       <recent name="$PROJECT_DIR$/scripts" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ManyBeautifulMall/utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -407,9 +390,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1601" height="893" extended-state="6" />
+    <frame x="91" y="24" width="1224" height="785" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18858242" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16328257" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -423,14 +407,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32806325" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002764" side_tool="true" weight="0.28311688" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4997236" weight="0.23543689" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4997236" weight="0.35045317" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286908" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3272727" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32907075" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.20846696" />
+      <window_info anchor="right" id="Database" order="4" weight="0.30064756" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,27 +432,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="邮箱认证优化&amp;收货地址ZSGC" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="125" column="12" selection-start-line="125" selection-start-column="12" selection-end-line="125" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="115" column="9" lean-forward="true" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/verifications/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="928">
@@ -675,9 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="28" selection-start-column="28" selection-end-column="28" />
-          <folding>
-            <marker date="1540865816329" expanded="true" signature="3368:4906" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -695,14 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3335">
           <caret line="228" column="16" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
-          <folding>
-            <element signature="e#698#1196#0" />
-            <element signature="e#1252#1689#0" />
-            <element signature="e#1743#1971#0" />
-            <element signature="e#2028#2357#0" />
-            <element signature="e#2405#2592#0" />
-            <element signature="e#2638#3674#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,9 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,16 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1595">
-          <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -737,29 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1624">
           <caret line="211" lean-forward="true" selection-start-line="211" selection-end-line="211" />
-          <folding>
-            <element signature="e#271#3568#0" />
-            <element signature="e#271#363#1" />
-            <element signature="e#532#624#0" />
-            <element signature="e#757#847#0" />
-            <element signature="e#981#1071#0" />
-            <element signature="e#1362#1514#0" />
-            <element signature="e#1562#1863#0" />
-            <element signature="e#1910#2023#0" />
-            <element signature="e#2065#2852#0" />
-            <element signature="e#2945#3568#0" />
-            <element signature="e#3092#3138#0" />
-            <element signature="e#3243#3259#0" />
-            <element signature="e#3644#3767#0" />
-            <element signature="e#3684#3767#0" />
-            <element signature="e#3835#4420#0" />
-            <element signature="e#3873#4023#0" />
-            <element signature="e#3942#4023#0" />
-            <element signature="e#3965#4013#0" />
-            <element signature="e#4104#4420#0" />
-            <element signature="e#4491#4939#0" />
-            <marker date="1540883244000" expanded="false" signature="4072:4094" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -767,9 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#12#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -812,6 +725,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
           <caret line="344" column="47" selection-start-line="344" selection-start-column="47" selection-end-line="344" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/conf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-927">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/utils/fastdfs/client.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/utils/fastdfs/fdfs_storage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+          <folding>
+            <element signature="e#18#50#0" expanded="true" />
+            <marker date="1541002325182" expanded="true" signature="242:1138" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="279" lean-forward="true" selection-start-line="279" selection-end-line="279" />
         </state>
       </provider>
     </entry>

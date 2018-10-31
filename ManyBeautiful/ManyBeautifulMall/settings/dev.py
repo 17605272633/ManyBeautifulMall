@@ -270,3 +270,10 @@ EMAIL_PORT = 25
 EMAIL_HOST_USER = '627001516@qq.com'  # 发送邮件的邮箱
 EMAIL_HOST_PASSWORD = 'fdinztozrdtpbajd'  # 在邮箱中设置的客户端授权密码
 EMAIL_FROM = '略略略略略略<627001516@qq.com>'  # 收件人看到的发件人
+
+# django文件存储
+DEFAULT_FILE_STORAGE = 'utils.fastdfs.fdfs_storage.FastDFSStorage'
+
+# FastDFS
+FDFS_URL = 'http://image.meiduo.site:8888/'
+FDFS_CLIENT_CONF = os.path.join(BASE_DIR, 'utils/fastdfs/client.conf')
