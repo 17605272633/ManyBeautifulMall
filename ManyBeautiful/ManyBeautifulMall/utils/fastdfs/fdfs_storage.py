@@ -5,7 +5,7 @@ from django.utils.deconstruct import deconstructible
 from fdfs_client.client import Fdfs_client
 
 
-@deconstructible
+@deconstructible  # 将存储类标记为可解析,才可以被序列化
 class FastDFSStorage(Storage):
     """FastDFS存储文件的存储类"""
 
@@ -30,7 +30,7 @@ class FastDFSStorage(Storage):
         """
         保存文件
         :param name: 传入文件的文件名
-        :param content: 传入文件的文件内容
+        :param content: 请求报文中的文件对象
         :return: FastDFS返回的文件名
         """
         # 创建Fdfs_client对象,指明配置文件
@@ -52,7 +52,7 @@ class FastDFSStorage(Storage):
         :return: 完整的url
         """
 
-        return self.base_url + name
+        return self.base_url + name  # 地址 + name
 
     def exists(self, name):
         """
@@ -62,4 +62,3 @@ class FastDFSStorage(Storage):
         """
 
         return False  # False 为告诉django山川的都是新文件
-
