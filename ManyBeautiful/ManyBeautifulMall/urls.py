@@ -25,4 +25,5 @@ urlpatterns = [
     url('^', include('goods.urls')),
     url('^', include('contents.urls')),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
+    url('^',include('goods.urls')),
 ]

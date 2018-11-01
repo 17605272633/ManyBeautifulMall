@@ -38,3 +38,5 @@ def get_goods_category():
             for sub_cats3 in sub_cats2.goodscategory_set.all():
                 sub_cats2.sub_cats.append(sub_cats3)
             categories[channel.group_id]['sub_cats'].append(sub_cats2)
+
+    return categories

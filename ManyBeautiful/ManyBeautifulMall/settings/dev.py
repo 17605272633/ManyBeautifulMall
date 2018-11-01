@@ -225,6 +225,8 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
     ),
+    # 分页
+    'DEFAULT_PAGINATION_CLASS': 'utils.pagination.SKUListPagination',
 }
 
 # 设置缓存数据保存位置和有效期
