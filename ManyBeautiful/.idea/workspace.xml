@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f52597a-5f34-4acb-8203-0049c9301dee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/templates/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/meiduo.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/meiduo.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/10.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/11.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/12.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/13.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/14.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/15.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/16.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front_end_pc/goods/16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/8.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end_pc/goods/9.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +79,7 @@
           <entry key="html" value="11" />
           <entry key="js" value="1" />
           <entry key="log" value="11" />
-          <entry key="py" value="268" />
+          <entry key="py" value="269" />
           <entry key="sql" value="22" />
           <entry key="tb_address" value="2" />
           <entry key="tb_areas" value="7" />
@@ -117,7 +101,7 @@
           <entry key="HTML" value="11" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="268" />
+          <entry key="Python" value="269" />
           <entry key="SQL" value="6" />
           <entry key="Scratch" value="16" />
           <entry key="YAML" value="5" />
@@ -128,16 +112,16 @@
           <entry key="cell" value="5" />
           <entry key="conf" value="25" />
           <entry key="js" value="17" />
-          <entry key="py" value="15323" />
+          <entry key="py" value="15371" />
           <entry key="sql" value="96" />
-          <entry key="txt" value="185" />
+          <entry key="txt" value="203" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="17" />
-          <entry key="PLAIN_TEXT" value="210" />
-          <entry key="Python" value="15323" />
+          <entry key="PLAIN_TEXT" value="228" />
+          <entry key="Python" value="15371" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="100" />
         </counts>
@@ -166,12 +150,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="262" column="21" selection-start-line="262" selection-start-column="21" selection-end-line="262" selection-end-column="21" />
+            <state relative-caret-position="200">
+              <caret line="274" column="39" selection-start-line="274" selection-start-column="39" selection-end-line="274" selection-end-column="39" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
                 <element signature="e#3905#6912#0" />
-                <marker date="1541160801440" expanded="true" signature="6987:7153" ph="..." />
+                <marker date="1541166815862" expanded="true" signature="6991:7305" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/users/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1070">
+              <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+                <marker date="1541167101741" expanded="true" signature="6239:6367" ph="..." />
+                <marker date="1541167101741" expanded="true" signature="6404:6405" ph="..." />
+                <marker date="1541167101741" expanded="true" signature="6404:6414" ph="..." />
               </folding>
             </state>
           </provider>
@@ -189,8 +188,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="329" lean-forward="true" selection-start-line="329" selection-end-line="329" />
+            <state relative-caret-position="243">
+              <caret line="167" column="9" lean-forward="true" selection-start-line="167" selection-start-column="9" selection-end-line="167" selection-end-column="9" />
               <folding>
                 <element signature="e#0#320#1" />
                 <element signature="e#613#675#0" />
@@ -228,11 +227,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/generate_detail_html.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+            <state relative-caret-position="519">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -319,10 +318,10 @@
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/goods/admin.py" />
         <option value="$PROJECT_DIR$/scripts/regenerate_detail_html.py" />
         <option value="$PROJECT_DIR$/scripts/generate_detail_html.py" />
-        <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/users/serializers.py" />
-        <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/contents/crons.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py" />
+        <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py" />
+        <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/users/serializers.py" />
       </list>
     </option>
   </component>
@@ -356,11 +355,6 @@
             <path>
               <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
               <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
               <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -375,6 +369,13 @@
               <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="contents" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
+              <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
@@ -595,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541159215463</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="商品详情页实现,脚本添加文件实现">
+      <created>1541165004835</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1541165004835</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -609,13 +617,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1215" height="880" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17220801" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17220801" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32628798" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24438573" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22721268" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994528" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -624,7 +633,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32978722" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32806325" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50127876" side_tool="true" weight="0.27476883" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49872124" visible="true" weight="0.27476883" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49872124" weight="0.27476883" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32597402" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3259053" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -651,7 +660,8 @@
     <MESSAGE value="查询分类的封装" />
     <MESSAGE value="商品列表页实现" />
     <MESSAGE value="商品搜算实现,首页bug,商品详情页,历史记录未实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="商品搜算实现,首页bug,商品详情页,历史记录未实现" />
+    <MESSAGE value="商品详情页实现,脚本添加文件实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品详情页实现,脚本添加文件实现" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8bc071d9-9aae-4655-9c3a-420957c9b1f4/console.sql">
@@ -853,19 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/users/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7018">
-          <caret line="248" column="37" selection-start-line="248" selection-start-column="37" selection-end-line="248" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <marker date="1541153502454" expanded="true" signature="6239:6367" ph="..." />
-            <marker date="1541153502454" expanded="true" signature="6404:6405" ph="..." />
-            <marker date="1541153502454" expanded="true" signature="6404:6414" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/goods/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -955,18 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="262" column="21" selection-start-line="262" selection-start-column="21" selection-end-line="262" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-            <element signature="e#3905#6912#0" />
-            <marker date="1541160801440" expanded="true" signature="6987:7153" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/contents/crons.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -981,18 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="329" lean-forward="true" selection-start-line="329" selection-end-line="329" />
-          <folding>
-            <element signature="e#0#320#1" />
-            <element signature="e#613#675#0" />
-            <element signature="e#994#1076#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1026,8 +999,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/generate_detail_html.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        <state relative-caret-position="519">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="274" column="39" selection-start-line="274" selection-start-column="39" selection-end-line="274" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#3905#6912#0" />
+            <marker date="1541166815862" expanded="true" signature="6991:7305" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="167" column="9" lean-forward="true" selection-start-line="167" selection-start-column="9" selection-end-line="167" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#320#1" />
+            <element signature="e#613#675#0" />
+            <element signature="e#994#1076#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/users/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1070">
+          <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <marker date="1541167101741" expanded="true" signature="6239:6367" ph="..." />
+            <marker date="1541167101741" expanded="true" signature="6404:6405" ph="..." />
+            <marker date="1541167101741" expanded="true" signature="6404:6414" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -239,16 +239,14 @@ class RecordUserBrowsingHistorySerializer(serializers.Serializer):
         # 创建redis链接对象,保存该商品sku浏览记录
         redis_conn = get_redis_connection("history")
         # (优化)使用管道方式交互redis
-        pl = redis_conn.pipeline()
+        # pl = redis_conn.pipeline()
 
         # 移除当前商品对应的数据浏览记录
-        pl.lrem("history_%s" % user_id, 0, sku_id)
+        redis_conn.lrem("history_%s" % user_id, 0, sku_id)
         # 添加新的浏览记录到第一个位置
-        pl.lpush("history_%s" % user_id, sku_id)
+        redis_conn.lpush("history_%s" % user_id, sku_id)
         # 只保存最多5条记录,删除最后一个
-        if pl.llen("history_%s" % user_id) > constants.USER_BROWSING_HISTORY_COUNTS_LIMIT:
-            pl.rpop("history_%s" % user_id)
-
-        pl.execute()
+        if redis_conn.llen("history_%s" % user_id) > constants.USER_BROWSING_HISTORY_COUNTS_LIMIT:
+            redis_conn.rpop("history_%s" % user_id)
 
         return validated_data

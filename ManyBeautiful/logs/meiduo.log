@@ -2885,3 +2885,113 @@ INFO 2018-11-02 21:17:50,519 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
 INFO 2018-11-02 21:18:00,817 basehttp 124 "POST /admin/goods/skuspecification/34/change/ HTTP/1.1" 302 0
 INFO 2018-11-02 21:18:01,937 basehttp 124 "GET /admin/goods/skuspecification/ HTTP/1.1" 200 15111
 INFO 2018-11-02 21:18:02,261 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-02 21:35:53,744 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-02 21:35:54,184 basehttp 124 "GET /user/ HTTP/1.1" 200 85
+INFO 2018-11-02 21:35:54,234 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-02 21:35:54,311 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2018-11-02 21:36:04,919 basehttp 124 "GET /user/ HTTP/1.1" 200 85
+INFO 2018-11-02 21:36:05,089 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2018-11-02 21:36:58,395 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-11-02 21:36:58,636 base 152 Not Found: /cart/
+WARNING 2018-11-02 21:36:58,641 basehttp 124 "GET /cart/ HTTP/1.1" 404 9832
+WARNING 2018-11-02 21:36:58,641 base 152 Not Found: /categories/115/
+WARNING 2018-11-02 21:36:58,642 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 9862
+INFO 2018-11-02 21:36:58,730 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+WARNING 2018-11-02 21:37:02,142 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:37:08,144 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:38:04,748 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:38:51,874 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:38:58,960 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:39:04,304 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:39:09,822 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:40:05,715 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:41:03,677 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:42:05,644 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:42:18,946 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:43:06,735 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:44:05,637 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:45:06,112 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+INFO 2018-11-02 21:46:04,097 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-11-02 21:46:04,258 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:47:04,740 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:48:04,546 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:49:04,663 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:50:04,734 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:51:04,544 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:52:04,367 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+WARNING 2018-11-02 21:53:04,398 basehttp 124 "POST /browse_histories/ HTTP/1.1" 405 46
+ERROR 2018-11-02 21:54:05,274 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/generics.py", line 244, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/users/serializers.py", line 252, in create
+    redis_conn.execute()
+AttributeError: 'StrictRedis' object has no attribute 'execute'
+ERROR 2018-11-02 21:54:05,935 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 21442
+ERROR 2018-11-02 21:55:04,992 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/generics.py", line 244, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/users/serializers.py", line 252, in create
+    redis_conn.execute()
+AttributeError: 'StrictRedis' object has no attribute 'execute'
+ERROR 2018-11-02 21:55:05,037 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 21442
+INFO 2018-11-02 21:56:04,622 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-02 21:56:05,016 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-02 21:57:05,495 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-02 21:57:15,351 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-02 21:57:20,590 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-02 21:57:32,558 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-02 21:57:45,623 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-02 21:57:49,171 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-02 21:58:05,672 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-02 21:58:10,137 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-02 21:58:49,244 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-02 21:58:49,435 basehttp 124 "GET /user/ HTTP/1.1" 200 85
+INFO 2018-11-02 21:58:49,604 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 574
+INFO 2018-11-02 21:59:04,465 basehttp 124 "GET /user/ HTTP/1.1" 200 85
+INFO 2018-11-02 21:59:04,571 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 574
