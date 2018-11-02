@@ -1,8 +1,8 @@
 from rest_framework import serializers
 import re
 from django_redis import get_redis_connection
-
 from celery_tasks.email.tasks import send_verify_email
+from goods.models import SKU
 from utils import jwt_token
 from .models import *
 
@@ -209,3 +209,46 @@ class AddressTitleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Address
         fields = ('title',)
+
+
+# 浏览历史序列化器
+class RecordUserBrowsingHistorySerializer(serializers.Serializer):
+    """用户浏览历史序列化器"""
+
+    # 定义属性   被浏览商品sku_id属性
+    sku_id = serializers.IntegerField(label="商品SKU编号", min_value=1)
+
+    # 验证
+    def validate_sku_id(self, value):
+
+        # 验证sku_id是否有效(是否对应一个商品)
+
+        count = SKU.objects.filter(pk=value).count()
+        if count <= 0:
+            raise serializers.ValidationError('该商品不存在')
+
+        # 检验完毕,返回值
+        return value
+
+    # 保存
+    def create(self, validated_data):
+        # 获取当前登陆用户id,已验证的sku_id
+        user_id = self.context['request'].user.id
+        sku_id = validated_data['sku_id']
+
+        # 创建redis链接对象,保存该商品sku浏览记录
+        redis_conn = get_redis_connection("history")
+        # (优化)使用管道方式交互redis
+        pl = redis_conn.pipeline()
+
+        # 移除当前商品对应的数据浏览记录
+        pl.lrem("history_%s" % user_id, 0, sku_id)
+        # 添加新的浏览记录到第一个位置
+        pl.lpush("history_%s" % user_id, sku_id)
+        # 只保存最多5条记录,删除最后一个
+        if pl.llen("history_%s" % user_id) > constants.USER_BROWSING_HISTORY_COUNTS_LIMIT:
+            pl.rpop("history_%s" % user_id)
+
+        pl.execute()
+
+        return validated_data

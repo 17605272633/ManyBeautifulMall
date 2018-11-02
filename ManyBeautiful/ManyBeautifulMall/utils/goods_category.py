@@ -3,7 +3,6 @@ from goods.models import GoodsCategory, GoodsChannel
 
 
 def get_goods_category():
-    # 查询分类数据, 广告数据
     """查询分类数据"""
     """
     {

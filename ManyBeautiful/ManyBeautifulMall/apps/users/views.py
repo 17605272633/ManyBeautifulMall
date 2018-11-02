@@ -1,14 +1,18 @@
+from django_redis import get_redis_connection
 from rest_framework import status
 from rest_framework.decorators import action
-from rest_framework.generics import CreateAPIView, RetrieveAPIView, UpdateAPIView
+from rest_framework.generics import CreateAPIView, RetrieveAPIView, UpdateAPIView, GenericAPIView
 from rest_framework.mixins import CreateModelMixin, UpdateModelMixin
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import GenericViewSet, ModelViewSet
+
+from goods.models import SKU
+from goods.serializers import SKUSerializer
 from users.models import User
 from users.serializers import CreateUserSerializer, UserDetailSerializer, EmailSerializer, UserAddressSerializer, \
-    AddressTitleSerializer, constants, EmailActiveSerializer
+    AddressTitleSerializer, constants, EmailActiveSerializer, RecordUserBrowsingHistorySerializer
 
 
 # 统计该用户名数量的类视图
@@ -242,6 +246,41 @@ class AddressViewSet(ModelViewSet):
 
         return Response({'title': address.title})
 
+
+# 用户浏览记录
+class UserBrowsingHistoryView(GenericAPIView, CreateModelMixin):
+    """
+    记录用户浏览记录
+    请求方式: POST /browse_histories/
+    """
+    serializer_class = RecordUserBrowsingHistorySerializer
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        """
+        获取浏览历史记录
+        :return: id, name, price, default_image_url, comments
+        """
+        # 获取当前登陆的用户id
+        user_id = request.user.id
+
+        # 创建redis对象,在redis中查询历史记录数据
+        redis_conn = get_redis_connection("history")
+        # history是sku_id的集合
+        history = redis_conn.lrange("history_%s" % user_id, 0, -1)
+
+        skus = []
+        # 为了保持查询出的顺序与用户的浏览历史保存顺序一致
+        # 因为redis中list的键值天剑是按照先后的,所以和用户浏览的顺序一致
+        for sku_id in history:
+            sku = SKU.objects.get(id=sku_id)
+            skus.append(sku)
+
+        s = SKUSerializer(skus, many=True)
+
+        # 组织返回的json对象,并返回
+        context = s.data
+        return Response(context)
 
 
 
