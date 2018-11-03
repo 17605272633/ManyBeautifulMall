@@ -42,6 +42,7 @@ class SKUSearchViewSet(HaystackViewSet):
     # 分页
     pagination_class = SKUListPagination
 
+
     """
     返回结果实例:
     {

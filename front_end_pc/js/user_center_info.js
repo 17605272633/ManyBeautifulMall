@@ -39,7 +39,7 @@ var vm = new Vue({
                         responseType: 'json'
                     })
                         .then(response => {
-                            this.histories = response.data;
+                            this.histories = response.data.results;
                             for (var i = 0; i < this.histories.length; i++) {
                                 this.histories[i].url = '/goods/' + this.histories[i].id + '.html';
                             }

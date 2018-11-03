@@ -278,17 +278,28 @@ class UserBrowsingHistoryView(ListCreateAPIView):
         # 为了保持查询出的顺序与用户的浏览历史保存顺序一致
         # 因为redis中list的键值天剑是按照先后的,所以和用户浏览的顺序一致
         for sku_id in history:
-            sku = SKU.objects.get(pk=int(sku_id))
-            skus.append(sku)
+            skus.append(SKU.objects.get(pk=sku_id))
 
+        # print(skus)
         return skus  # [sku,sku,sku,...]
 
-        # s = SKUSerializer(skus, many=True)
-        #
-        # # 组织返回的json对象,并返回
-        # context = s.data
-        # return Response(context)
 
 
 
+"""
 
+{
+"count":5,
+"next":"http://api.meiduo.site:8000/browse_histories/?page=2",
+"previous":null,
+"results":[
+    {
+        "id":13,
+        "name":"华为 HUAWEI P10 Plus 6GB+64GB 玫瑰金 移动联通电信4G手机 双卡双待",
+        "price":"3388.00",
+        "default_image_url":"http://image.meiduo.site:8888/group1/M00/00/02/CtM3BVrRdLGARgBAAAVslh9vkK00474545",
+        "comments":0
+    },
+     
+    {"id":10,"name":"华为 HUAWEI P10 Plus 6GB+128GB 钻雕金 移动联通电信4G手机 双卡双待","price":"3788.00","default_image_url":"http://image.meiduo.site:8888/group1/M00/00/02/CtM3BVrRchWAMc8rAARfIK95am88158618","comments":5}]}
+"""

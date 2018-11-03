@@ -24,6 +24,3 @@ class SKUIndex(indexes.SearchIndex, indexes.Indexable):
         # is_launched 是否上架出售
         # 查询条件可修改
         return self.get_model().objects.filter(is_launched=True)
-
-
-
