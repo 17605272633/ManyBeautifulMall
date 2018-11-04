@@ -7,17 +7,19 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 
 from carts import constants
-from carts.serializers import AddCartSerializer, FindCartSerializer, UpDateCartSerializer, DeleteCartSerializer
+from carts.serializers import AddCartSerializer, FindCartSerializer, UpDateCartSerializer, DeleteCartSerializer, \
+    SelectAllCartSerializer
 from goods.models import SKU
 
 
+# 购物车视图集
 class CartView(APIView):
-    """购物车视图函数"""
+    """购物车视图集"""
 
-    # 前端请求时携带了Authorization请求头（主要是JWT），而如果用户未登录，此请求头的JWT没有值，
-    # 为了防止REST framework框架在验证此无意义的JWT时抛出401异常
-    # 重写用户认证方法,不在进入视图前就检查JWT
     def perform_authentication(self, request):
+        # 前端请求时携带了Authorization请求头（主要是JWT），而如果用户未登录，此请求头的JWT没有值，
+        # 为了防止REST framework框架在验证此无意义的JWT时抛出401异常
+        # 重写用户认证方法,不在进入视图前就检查JWT
         pass
 
     def get(self, request):
@@ -276,4 +278,83 @@ class CartView(APIView):
             else:
                 # 购物车数据为空,则无数据可删除,直接返回
                 response = Response(status=status.HTTP_204_NO_CONTENT)
+                return response
+
+
+# 购物车全选视图集
+class CartSelectAllView(APIView):
+    """购物车全选视图集"""
+
+    def perform_authentication(self, request):
+        # 前端请求时携带了Authorization请求头（主要是JWT），而如果用户未登录，此请求头的JWT没有值，
+        # 为了防止REST framework框架在验证此无意义的JWT时抛出401异常
+        # 重写用户认证方法,不在进入视图前就检查JWT
+        pass
+
+    def put(self, request):
+        """
+        购物车全选
+        PUT /cart/selection/
+        :param request: request.data中有selected(是否全选)
+        :return: {"message": "ok"}
+        """
+        selall_serializer = SelectAllCartSerializer(data=request.data)
+        if selall_serializer.is_valid(raise_exception=True) is False:
+            return Response(selall_serializer.errors)
+
+        # 获取属性的值
+        selected = selall_serializer.validated_data['selected']
+
+        # 获取当前用户信息(并验证登陆)
+        try:
+            user = request.user
+        except Exception:
+            # 验证失败,用户数据为空
+            user = None
+
+        if user is not None and user.is_authenticated:
+            # 用户已登陆, 数据在redis中
+
+            redis_conn = get_redis_connection('cart')
+            cart = redis_conn.hgetall('cart_%s' % user.id)
+
+            # 获取所有购物车内商品的id
+            sku_id_list = cart.keys()
+
+            # 判断是否全选
+            if selected:
+                # 全选
+                redis_conn.sadd('cart_selected_%s' % user.id, *sku_id_list)
+            else:
+                # 取消全选
+                redis_conn.srem('cart_selected_%s' % user.id, *sku_id_list)
+            return Response({'message': 'OK'})
+
+        else:
+            # 用户未登录，从cookie中删除
+
+            # 获取请求中的cookie中的购物车数据
+            cart = request.COOKIES.get('cart')
+            if cart is not None:
+                # 不为空,将其解码并反序列化为python类型
+                cart = pickle.loads(base64.b64decode(cart.encode()))
+
+                # 获取商品id sku_id,修改勾选属性值为请求中的值
+                for sku_id in cart:
+                    cart[sku_id]['selected'] = selected
+
+                # 将cookie数据序列化为bytes类型并编码
+                cookie_cart = base64.b64encode(pickle.dumps(cart)).decode()
+
+                # 设置响应数据
+                response = Response({'message': 'OK'})
+
+                # 设置购物车的cookie
+                # 需要设置有效期，否则是临时cookie
+                response.set_cookie('cart', cookie_cart, max_age=constants.CART_COOKIE_EXPIRES)
+                return response
+
+            else:
+                # 购物车数据为空,则无数据可删除,直接返回
+                response = Response({'message': 'OK'})
                 return response

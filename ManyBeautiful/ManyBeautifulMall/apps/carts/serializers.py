@@ -72,5 +72,7 @@ class DeleteCartSerializer(serializers.Serializer):
         return value
 
 
-
-
+# 购物车数据全选序列化器
+class SelectAllCartSerializer(serializers.Serializer):
+    """购物车数据全选序列化器"""
+    selected = serializers.BooleanField(label='全选')
