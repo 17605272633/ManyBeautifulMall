@@ -7,7 +7,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 
 from carts import constants
-from carts.serializers import AddCartSerializer, FindCartSerializer, UpDateCartSerializer
+from carts.serializers import AddCartSerializer, FindCartSerializer, UpDateCartSerializer, DeleteCartSerializer
 from goods.models import SKU
 
 
@@ -211,9 +211,69 @@ class CartView(APIView):
             # 将cookie数据序列化为bytes类型并编码
             cookie_cart = base64.b64encode(pickle.dumps(cart)).decode()
 
+            # 设置响应数据
             response = Response(update_serializer.data)
 
             # 设置购物车的cookie
             # 需要设置有效期，否则是临时cookie
             response.set_cookie('cart', cookie_cart, max_age=constants.CART_COOKIE_EXPIRES)
             return response
+
+    def delete(self, request):
+        """
+        删除购物车信息
+        :param request: request.data中有sku_id
+        :return: 无, 有状态码
+        """
+        delete_serializer = DeleteCartSerializer(data=request.data)
+        if delete_serializer.is_valid(raise_exception=True) is False:
+            return Response(delete_serializer.errors)
+
+        # 获取属性的值
+        sku_id = delete_serializer.validated_data['sku_id']
+
+        # 获取当前用户信息(并验证登陆)
+        try:
+            user = request.user
+        except Exception:
+            # 验证失败,用户数据为空
+            user = None
+
+        # 用户已登录，从redis中删除
+        if user is not None and user.is_authenticated:
+
+            redis_conn = get_redis_connection('cart')
+            # 删除商品数量信息
+            redis_conn.hdel('cart_%s' % user.id, sku_id)
+            # 删除商品勾选信息
+            redis_conn.srem('cart_selected_%s' % user.id, sku_id)
+
+            return Response(status=status.HTTP_204_NO_CONTENT)
+
+        # 用户未登录，从cookie中删除
+        else:
+
+            # 获取请求中的cookie中的购物车数据
+            cart = request.COOKIES.get('cart')
+            if cart is not None:
+                # 不为空,将其解码并反序列化为python类型
+                cart = pickle.loads(base64.b64decode(cart.encode()))
+
+                # 判断购物车数据列表中是否有该商品id,有则删除该键
+                if sku_id in cart:
+                    del cart[sku_id]
+                    # 将cookie数据序列化为bytes类型并编码
+                    cookie_cart = base64.b64encode(pickle.dumps(cart)).decode()
+
+                    # 设置响应数据
+                    response = Response(status=status.HTTP_204_NO_CONTENT)
+
+                    # 设置购物车的cookie
+                    # 需要设置有效期，否则是临时cookie
+                    response.set_cookie('cart', cookie_cart, max_age=constants.CART_COOKIE_EXPIRES)
+                    return response
+
+            else:
+                # 购物车数据为空,则无数据可删除,直接返回
+                response = Response(status=status.HTTP_204_NO_CONTENT)
+                return response

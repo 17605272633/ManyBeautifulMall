@@ -55,5 +55,22 @@ class UpDateCartSerializer(serializers.Serializer):
             return attrs
 
 
+# 购物车数据删除序列化器
+class DeleteCartSerializer(serializers.Serializer):
+    """购物车数据删除序列化器"""
+    # 定义属性
+    sku_id = serializers.IntegerField(label='商品id', min_value=1)
+
+    # 验证
+    def validate_sku_id(self, value):
+        # 获取商品信息,验证商品是否存在
+        try:
+            sku = SKU.objects.get(id=value)
+        except SKU.DoesNotExist:
+            raise serializers.ValidationError('商品不存在')
+
+        return value
+
+
 
 
