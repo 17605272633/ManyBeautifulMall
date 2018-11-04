@@ -7,7 +7,8 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 
 from carts import constants
-from carts.serializers import CartSerializer
+from carts.serializers import AddCartSerializer, FindCartSerializer
+from goods.models import SKU
 
 
 class CartView(APIView):
@@ -19,17 +20,65 @@ class CartView(APIView):
     def perform_authentication(self, request):
         pass
 
+    def get(self, request):
+        """
+        获取购物车信息
+        :param request: request.user 当前用户
+        :return: id, count, selected, name, default_image_url, price
+                 也就是商品的各个数据
+        """
+        # 获取用户, 判断用户登录
+        try:
+            user = request.user
+        except Exception:
+            user = None
+
+        if user is not None and user.is_authenticated:
+            # 用户登录,数据从redis中取出
+            redis_conn = get_redis_connection('cart')
+            # 获取redis中存储的信息
+            redis_cart = redis_conn.hgetall('cart_%s' % user.id)
+            redis_cart_selected = redis_conn.smembers('cart_selected_%s' % user.id)
+
+            # 定义字典,存入购物车数据
+            cart = {}
+            for sku_id, count in redis_cart.items():
+                cart[int(sku_id)] = {
+                    'count': int(count),
+                    'selected': sku_id in redis_cart_selected
+                }
+
+        else:
+            # 用户未登录，从cookie中读取
+            cart = request.COOKIES.get('cart')
+            if cart is not None:
+                cart = pickle.loads(base64.b64decode(cart.encode()))
+            else:
+                cart = {}
+
+        # 遍历处理购物车数据
+        # 根据键,查询商品信息
+        skus = SKU.objects.filter(id__in=cart.keys())
+        for sku in skus:
+            # 设置skus中每一条商品的数量和是否勾选
+            sku.count = cart[sku.id]['count']
+            sku.selected = cart[sku.id]['selected']
+
+        # 序列化数据并返回
+        serializer = FindCartSerializer(skus, many=True)
+        return Response(serializer.data)
+
     def post(self, request):
         """
-        添加购物车信息
-        请求方式: POST /cart/
-        :param request: request.data中包含sku_id(商品sku id),
-                                        count(数量),
-                                        selected(是否勾选，默认勾选)
-        :return: sku_id, count, selected
-        """
+                添加购物车信息
+                请求方式: POST /cart/
+                :param request: request.data中包含sku_id(商品sku id),
+                                                count(数量),
+                                                selected(是否勾选，默认勾选)
+                :return: sku_id, count, selected
+                """
         # 定义序列化器对象,并验证
-        cart_serializer = CartSerializer(data=request.data)
+        cart_serializer = AddCartSerializer(data=request.data)
         if cart_serializer.is_valid(raise_exception=True) is False:
             return Response(cart_serializer.errors)
 
