@@ -32,6 +32,10 @@ class FindCartSerializer(serializers.ModelSerializer):
     count = serializers.IntegerField(label='数量')
     selected = serializers.BooleanField(label='是否勾选')
 
+    class Meta:
+        model = SKU
+        fields = ('id', 'name', 'default_image_url', 'price', 'count', 'selected')
+
 
 # 购物车数据修改序列化器
 class UpDateCartSerializer(serializers.Serializer):

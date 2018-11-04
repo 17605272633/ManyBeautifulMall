@@ -48,19 +48,19 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
-    'rest_framework',
-    'corsheaders',  # 使用CORS来解决后端对跨域访问的支持
     'verifications.apps.VerificationsConfig',
     'oauth.apps.OauthConfig',
     'areas.apps.AreasConfig',
     'goods.apps.GoodsConfig',
     'contents.apps.ContentsConfig',
     'carts.apps.CartsConfig',
+
+    'rest_framework',
+    'corsheaders',  # 使用CORS来解决后端对跨域访问的支持
     'ckeditor',  # 富文本编辑器
     'ckeditor_uploader',  # 富文本编辑器上传图片模块
     'django_crontab',  # 定时任务
     'haystack',  # 模块化的搜索
-
 ]
 
 MIDDLEWARE = [
