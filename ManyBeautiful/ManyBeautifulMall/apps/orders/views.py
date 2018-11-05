@@ -1,5 +1,5 @@
 from django_redis import get_redis_connection
-from rest_framework.generics import CreateAPIView
+from rest_framework.generics import CreateAPIView, ListAPIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -25,7 +25,7 @@ class OrderSettlementView(APIView):
                         {
                             "id":  商品id,
                             "name":  商品名称,
-                             "default_image_url":  商品默认图片路径,
+                            "default_image_url":  商品默认图片路径,
                             "price":  商品单价,
                             "count":  商品数量
                         },
@@ -53,7 +53,6 @@ class OrderSettlementView(APIView):
         }
         """
         for sku_id in redis_cart_selected:
-            # hget key field
             cart_count[sku_id] = int(redis_conn.hget('cart_%s' % user.id, sku_id))
 
         # 查询商品,添加数量属性
@@ -79,9 +78,3 @@ class SaveOrderView(CreateAPIView):
     """订单保存类视图"""
     permission_classes = [IsAuthenticated]
     serializer_class = SaveOrderSerializer
-
-
-
-
-
-

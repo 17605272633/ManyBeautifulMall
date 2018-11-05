@@ -12469,3 +12469,447 @@ INFO 2018-11-05 14:02:43,295 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 
 INFO 2018-11-05 14:02:47,603 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
 INFO 2018-11-05 14:02:48,022 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
 INFO 2018-11-05 14:02:48,062 basehttp 124 "GET /addresses/ HTTP/1.1" 200 292
+INFO 2018-11-05 15:06:11,329 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 15:06:11,927 basehttp 124 "GET /cart/ HTTP/1.1" 200 1949
+INFO 2018-11-05 15:06:14,070 basehttp 124 "GET /cart/ HTTP/1.1" 200 1949
+INFO 2018-11-05 15:06:19,351 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+INFO 2018-11-05 15:06:19,999 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+INFO 2018-11-05 15:06:20,456 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+INFO 2018-11-05 15:06:21,027 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+INFO 2018-11-05 15:06:22,178 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+INFO 2018-11-05 15:06:39,933 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+WARNING 2018-11-05 15:06:39,968 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 15:06:39,985 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 10350
+INFO 2018-11-05 15:06:40,411 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-11-05 15:06:43,180 basehttp 124 "GET /categories/115/skus/?page=2&page_size=5&ordering=-create_time HTTP/1.1" 200 1369
+INFO 2018-11-05 15:06:55,635 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:07:05,109 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:07:08,562 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:07:16,888 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:07:21,454 basehttp 124 "GET /cart/ HTTP/1.1" 200 482
+INFO 2018-11-05 15:07:28,183 basehttp 124 "GET /cart/ HTTP/1.1" 200 482
+INFO 2018-11-05 15:07:41,640 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+ERROR 2018-11-05 15:07:42,010 exception 135 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/users/views.py", line 304, in post
+    response = merge_cart_cookie_to_redis(request, user, response)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/carts/utils.py", line 32, in merge_cart_cookie_to_redis
+    redis_pip = redis_conn.pipline()
+AttributeError: 'StrictRedis' object has no attribute 'pipline'
+ERROR 2018-11-05 15:07:42,506 basehttp 124 "POST /authorizations/ HTTP/1.1" 500 21281
+INFO 2018-11-05 15:11:26,116 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-11-05 15:11:26,349 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 211
+INFO 2018-11-05 15:11:30,690 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 15:11:31,029 basehttp 124 "GET /cart/ HTTP/1.1" 200 1233
+INFO 2018-11-05 15:11:42,569 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 15:19:40,473 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+WARNING 2018-11-05 15:19:40,619 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 15:19:40,639 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 10350
+INFO 2018-11-05 15:19:40,718 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-11-05 15:19:42,690 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=sales HTTP/1.1" 200 1270
+INFO 2018-11-05 15:19:48,456 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:19:53,451 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:19:58,718 basehttp 124 "GET /cart/ HTTP/1.1" 200 234
+INFO 2018-11-05 15:20:07,571 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:20:11,760 basehttp 124 "GET /cart/ HTTP/1.1" 200 234
+INFO 2018-11-05 15:20:21,621 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+INFO 2018-11-05 15:20:28,943 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:20:33,091 basehttp 124 "GET /cart/ HTTP/1.1" 200 234
+INFO 2018-11-05 15:20:48,325 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 211
+INFO 2018-11-05 15:20:53,205 basehttp 124 "GET /cart/ HTTP/1.1" 200 1466
+INFO 2018-11-05 15:21:04,854 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 15:21:41,188 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-11-05 15:21:41,583 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 211
+INFO 2018-11-05 15:21:49,403 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-11-05 15:21:49,512 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 15:21:49,540 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 10350
+INFO 2018-11-05 15:21:49,576 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-11-05 15:21:49,615 basehttp 124 "GET /cart/ HTTP/1.1" 200 1466
+INFO 2018-11-05 15:21:54,129 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 15:21:55,129 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 15:22:00,782 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-05 15:22:07,565 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:22:10,341 basehttp 124 "GET /cart/ HTTP/1.1" 200 1678
+INFO 2018-11-05 15:22:13,957 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-05 15:22:18,848 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:22:21,683 basehttp 124 "GET /cart/ HTTP/1.1" 200 1678
+INFO 2018-11-05 15:23:54,000 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+WARNING 2018-11-05 15:23:54,084 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 15:23:54,108 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 10350
+INFO 2018-11-05 15:23:54,229 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-11-05 15:24:04,394 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:24:07,175 basehttp 124 "GET /cart/ HTTP/1.1" 200 213
+INFO 2018-11-05 15:24:33,118 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:25:14,630 basehttp 124 "GET /cart/ HTTP/1.1" 200 213
+INFO 2018-11-05 15:26:30,942 basehttp 124 "GET /cart/ HTTP/1.1" 200 213
+INFO 2018-11-05 15:31:51,807 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 15:39:42,047 basehttp 124 "GET /cart/ HTTP/1.1" 200 213
+INFO 2018-11-05 15:39:52,207 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-11-05 15:39:52,532 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 211
+INFO 2018-11-05 15:40:00,474 basehttp 124 "GET /cart/ HTTP/1.1" 200 1678
+INFO 2018-11-05 15:40:03,831 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+WARNING 2018-11-05 15:40:28,778 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 15:40:28,781 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 10350
+INFO 2018-11-05 15:40:29,016 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-11-05 15:40:29,130 basehttp 124 "GET /cart/ HTTP/1.1" 200 1466
+INFO 2018-11-05 15:40:32,436 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 15:40:32,818 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 15:40:38,256 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-05 15:40:40,234 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:40:43,696 basehttp 124 "GET /cart/ HTTP/1.1" 200 1678
+INFO 2018-11-05 15:40:46,886 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-05 15:40:50,211 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:40:53,240 basehttp 124 "GET /cart/ HTTP/1.1" 200 1678
+INFO 2018-11-05 15:41:00,757 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-05 15:41:55,273 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-05 15:41:59,371 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 15:42:07,583 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-05 15:44:41,896 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+WARNING 2018-11-05 15:44:41,940 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 15:44:41,945 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 10350
+INFO 2018-11-05 15:44:42,091 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-11-05 15:44:43,875 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=price HTTP/1.1" 200 1312
+INFO 2018-11-05 15:44:45,132 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-11-05 15:46:08,912 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:46:12,703 basehttp 124 "GET /cart/ HTTP/1.1" 200 213
+INFO 2018-11-05 15:46:48,527 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:51:17,020 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 15:52:32,072 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-11-05 15:52:32,387 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 211
+INFO 2018-11-05 15:52:37,841 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 15:52:38,181 basehttp 124 "GET /cart/ HTTP/1.1" 200 1678
+INFO 2018-11-05 15:52:44,239 basehttp 124 "OPTIONS /user/addresses/ HTTP/1.1" 200 0
+INFO 2018-11-05 15:52:44,255 basehttp 124 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+WARNING 2018-11-05 15:52:44,403 base 152 Not Found: /user/addresses/
+WARNING 2018-11-05 15:52:44,406 basehttp 124 "GET /user/addresses/ HTTP/1.1" 404 10350
+INFO 2018-11-05 15:52:44,486 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 890
+INFO 2018-11-05 15:52:56,571 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2018-11-05 15:52:57,205 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2018-11-05 15:52:57,297 basehttp 124 "GET /addresses/ HTTP/1.1" 200 292
+WARNING 2018-11-05 15:58:01,700 base 152 Not Found: /user/addresses/
+WARNING 2018-11-05 15:58:01,768 basehttp 124 "GET /user/addresses/ HTTP/1.1" 404 10350
+INFO 2018-11-05 15:58:01,888 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 890
+INFO 2018-11-05 16:05:42,513 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 16:05:42,819 basehttp 124 "GET /cart/ HTTP/1.1" 200 1678
+INFO 2018-11-05 16:05:44,326 basehttp 124 "GET /cart/ HTTP/1.1" 200 1678
+INFO 2018-11-05 16:10:43,225 basehttp 124 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+INFO 2018-11-05 16:10:43,232 basehttp 124 "OPTIONS /user/addresses/ HTTP/1.1" 200 0
+WARNING 2018-11-05 16:10:43,258 base 152 Not Found: /user/addresses/
+WARNING 2018-11-05 16:10:43,261 basehttp 124 "GET /user/addresses/ HTTP/1.1" 404 10516
+ERROR 2018-11-05 16:10:43,497 exception 135 Internal Server Error: /orders/settlement/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/orders/views.py", line 62, in get
+    sku.count = cart_count[sku.id]
+KeyError: 1
+ERROR 2018-11-05 16:10:43,776 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 500 20906
+WARNING 2018-11-05 16:10:47,415 base 152 Not Found: /user/addresses/
+WARNING 2018-11-05 16:10:47,423 basehttp 124 "GET /user/addresses/ HTTP/1.1" 404 10516
+ERROR 2018-11-05 16:10:47,494 exception 135 Internal Server Error: /orders/settlement/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/orders/views.py", line 62, in get
+    sku.count = cart_count[sku.id]
+KeyError: 1
+ERROR 2018-11-05 16:10:47,535 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 500 20940
+WARNING 2018-11-05 16:10:50,225 base 152 Not Found: /user/addresses/
+WARNING 2018-11-05 16:10:50,245 basehttp 124 "GET /user/addresses/ HTTP/1.1" 404 10516
+ERROR 2018-11-05 16:10:50,288 exception 135 Internal Server Error: /orders/settlement/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/orders/views.py", line 62, in get
+    sku.count = cart_count[sku.id]
+KeyError: 1
+ERROR 2018-11-05 16:10:50,337 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 500 20940
+WARNING 2018-11-05 16:11:14,564 base 152 Not Found: /user/addresses/
+WARNING 2018-11-05 16:11:14,581 basehttp 124 "GET /user/addresses/ HTTP/1.1" 404 10516
+ERROR 2018-11-05 16:11:14,740 exception 135 Internal Server Error: /orders/settlement/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/orders/views.py", line 61, in get
+    sku.count = cart_count[sku.id]
+KeyError: 1
+ERROR 2018-11-05 16:11:14,799 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 500 20939
+WARNING 2018-11-05 16:11:27,055 base 152 Not Found: /user/addresses/
+WARNING 2018-11-05 16:11:27,063 basehttp 124 "GET /user/addresses/ HTTP/1.1" 404 10516
+INFO 2018-11-05 16:11:27,194 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 890
+INFO 2018-11-05 16:15:53,701 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-05 16:15:53,754 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-05 16:15:53,980 basehttp 124 "GET /user/ HTTP/1.1" 200 85
+INFO 2018-11-05 16:15:54,005 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 16:15:54,009 basehttp 124 "GET /user/ HTTP/1.1" 200 85
+INFO 2018-11-05 16:15:54,132 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1177
+INFO 2018-11-05 16:15:54,183 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1177
+INFO 2018-11-05 16:15:59,213 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 16:15:59,357 basehttp 124 "GET /cart/ HTTP/1.1" 200 1678
+INFO 2018-11-05 16:16:02,776 basehttp 124 "OPTIONS /cart/selection/ HTTP/1.1" 200 0
+INFO 2018-11-05 16:16:02,808 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+WARNING 2018-11-05 16:16:07,705 base 152 Not Found: /user/addresses/
+WARNING 2018-11-05 16:16:07,708 basehttp 124 "GET /user/addresses/ HTTP/1.1" 404 10508
+INFO 2018-11-05 16:16:07,804 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 1590
+INFO 2018-11-05 16:17:45,387 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2018-11-05 16:17:45,566 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 1590
+INFO 2018-11-05 16:17:45,646 basehttp 124 "GET /addresses/ HTTP/1.1" 200 292
+INFO 2018-11-05 16:17:49,901 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 1590
+INFO 2018-11-05 16:17:49,919 basehttp 124 "GET /addresses/ HTTP/1.1" 200 292
+INFO 2018-11-05 16:28:06,995 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 16:28:07,109 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+WARNING 2018-11-05 16:28:07,112 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 16:28:07,120 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 10508
+INFO 2018-11-05 16:28:07,169 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-11-05 16:28:33,083 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2018-11-05 16:28:55,432 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+WARNING 2018-11-05 16:31:19,152 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 16:31:19,166 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 10507
+INFO 2018-11-05 16:31:19,225 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2018-11-05 16:31:19,286 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-11-05 16:59:05,722 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-11-05 16:59:06,085 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 211
+INFO 2018-11-05 16:59:09,451 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 16:59:09,678 basehttp 124 "GET /cart/ HTTP/1.1" 200 1675
+INFO 2018-11-05 16:59:12,764 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2018-11-05 16:59:12,774 basehttp 124 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+INFO 2018-11-05 16:59:12,971 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 1590
+INFO 2018-11-05 16:59:12,999 basehttp 124 "GET /addresses/ HTTP/1.1" 200 292
+INFO 2018-11-05 16:59:15,375 basehttp 124 "OPTIONS /orders/ HTTP/1.1" 200 0
+WARNING 2018-11-05 16:59:15,533 basehttp 124 "POST /orders/ HTTP/1.1" 400 42
+WARNING 2018-11-05 16:59:31,166 basehttp 124 "POST /orders/ HTTP/1.1" 400 42
+INFO 2018-11-05 17:00:58,744 basehttp 124 "POST /orders/ HTTP/1.1" 201 38
+INFO 2018-11-05 17:09:54,388 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 17:09:54,516 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+WARNING 2018-11-05 17:10:15,783 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 17:10:15,795 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 10507
+INFO 2018-11-05 17:10:15,951 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 17:10:16,067 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-11-05 17:10:18,333 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 17:10:18,652 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 17:10:20,055 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2018-11-05 17:10:23,381 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2018-11-05 17:10:25,002 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2018-11-05 17:10:25,020 basehttp 124 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+INFO 2018-11-05 17:10:25,248 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 262
+INFO 2018-11-05 17:10:25,285 basehttp 124 "GET /addresses/ HTTP/1.1" 200 292
+INFO 2018-11-05 17:10:30,303 basehttp 124 "OPTIONS /orders/ HTTP/1.1" 200 0
+ERROR 2018-11-05 17:10:30,456 serializers 184 Cannot assign "1": "OrderInfo.address" must be a "Address" instance.
+ERROR 2018-11-05 17:10:30,507 exception 135 Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/orders/serializers.py", line 98, in create
+    order.address = address  # 收获地址
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/fields/related_descriptors.py", line 216, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "1": "OrderInfo.address" must be a "Address" instance.
+ERROR 2018-11-05 17:10:30,789 basehttp 124 "POST /orders/ HTTP/1.1" 500 21916
+INFO 2018-11-05 17:15:26,073 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 262
+INFO 2018-11-05 17:15:26,178 basehttp 124 "GET /addresses/ HTTP/1.1" 200 292
+INFO 2018-11-05 17:15:32,790 basehttp 124 "POST /orders/ HTTP/1.1" 201 38
+WARNING 2018-11-05 17:16:43,779 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 17:16:43,799 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 10507
+INFO 2018-11-05 17:16:43,891 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 17:16:43,895 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-11-05 17:16:46,598 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 17:16:49,132 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2018-11-05 17:16:52,737 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2018-11-05 17:16:54,870 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 262
+INFO 2018-11-05 17:16:54,974 basehttp 124 "GET /addresses/ HTTP/1.1" 200 292
+INFO 2018-11-05 17:17:04,328 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 262
+INFO 2018-11-05 17:17:04,408 basehttp 124 "GET /addresses/ HTTP/1.1" 200 292
+WARNING 2018-11-05 17:17:06,551 basehttp 124 "POST /orders/ HTTP/1.1" 400 42
+WARNING 2018-11-05 17:17:11,993 basehttp 124 "POST /orders/ HTTP/1.1" 400 22
+INFO 2018-11-05 17:17:26,351 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 17:17:32,239 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 17:17:33,858 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2018-11-05 17:17:39,733 basehttp 124 "GET /cart/ HTTP/1.1" 200 500
+INFO 2018-11-05 17:17:43,390 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-11-05 17:17:44,970 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 261
+INFO 2018-11-05 17:17:44,984 basehttp 124 "GET /addresses/ HTTP/1.1" 200 292
+INFO 2018-11-05 17:17:48,948 basehttp 124 "POST /orders/ HTTP/1.1" 201 38
+INFO 2018-11-05 17:59:16,464 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-11-05 17:59:16,527 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 17:59:16,536 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 10507
+INFO 2018-11-05 17:59:16,639 basehttp 124 "GET /cart/ HTTP/1.1" 200 252
+INFO 2018-11-05 17:59:16,639 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-11-05 17:59:18,793 basehttp 124 "GET /categories/115/skus/?page=2&page_size=5&ordering=-create_time HTTP/1.1" 200 1369
+INFO 2018-11-05 17:59:22,373 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 17:59:23,065 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 17:59:28,443 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2018-11-05 17:59:32,702 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 17:59:34,556 basehttp 124 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+INFO 2018-11-05 17:59:34,558 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2018-11-05 17:59:34,880 basehttp 124 "GET /addresses/ HTTP/1.1" 200 292
+INFO 2018-11-05 17:59:34,887 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 262
+INFO 2018-11-05 17:59:41,595 basehttp 124 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2018-11-05 17:59:41,929 basehttp 124 "POST /orders/ HTTP/1.1" 201 38
+INFO 2018-11-05 18:11:16,110 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-11-05 18:11:16,430 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 18:11:16,434 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 10507
+INFO 2018-11-05 18:11:16,552 basehttp 124 "GET /cart/ HTTP/1.1" 200 252
+INFO 2018-11-05 18:11:16,610 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-11-05 18:11:20,529 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 18:11:21,276 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 18:11:24,470 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2018-11-05 18:11:34,348 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-05 18:11:38,906 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-05 18:11:43,589 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-05 18:11:44,091 basehttp 124 "GET /user/ HTTP/1.1" 200 85
+INFO 2018-11-05 18:11:44,357 basehttp 124 "GET /user/ HTTP/1.1" 200 85
+INFO 2018-11-05 18:11:44,804 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1197
+INFO 2018-11-05 18:11:45,100 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1197
+INFO 2018-11-05 18:11:45,242 basehttp 124 "GET /cart/ HTTP/1.1" 200 714
+INFO 2018-11-05 18:11:49,677 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 18:11:51,879 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2018-11-05 18:11:51,896 basehttp 124 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+INFO 2018-11-05 18:11:52,107 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 692
+INFO 2018-11-05 18:11:52,131 basehttp 124 "GET /addresses/ HTTP/1.1" 200 292
+INFO 2018-11-05 18:11:54,104 basehttp 124 "OPTIONS /orders/ HTTP/1.1" 200 0
+WARNING 2018-11-05 18:11:54,199 basehttp 124 "POST /orders/ HTTP/1.1" 400 42
+INFO 2018-11-05 18:24:44,898 basehttp 124 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+INFO 2018-11-05 18:24:44,908 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2018-11-05 18:24:45,097 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 692
+INFO 2018-11-05 18:24:45,100 basehttp 124 "GET /addresses/ HTTP/1.1" 200 292
+INFO 2018-11-05 18:24:47,409 basehttp 124 "OPTIONS /orders/ HTTP/1.1" 200 0
+WARNING 2018-11-05 18:24:47,560 basehttp 124 "POST /orders/ HTTP/1.1" 400 42
+WARNING 2018-11-05 18:25:23,829 basehttp 124 "POST /orders/ HTTP/1.1" 400 42
+WARNING 2018-11-05 18:25:36,083 basehttp 124 "POST /orders/ HTTP/1.1" 400 22
+INFO 2018-11-05 18:26:54,594 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 692
+INFO 2018-11-05 18:26:54,676 basehttp 124 "GET /addresses/ HTTP/1.1" 200 292
+WARNING 2018-11-05 18:26:59,019 basehttp 124 "POST /orders/ HTTP/1.1" 400 42
+INFO 2018-11-05 18:27:44,893 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-05 18:27:45,263 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-05 18:27:45,562 basehttp 124 "GET /user/ HTTP/1.1" 200 85
+INFO 2018-11-05 18:27:45,634 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 18:27:45,796 basehttp 124 "GET /user/ HTTP/1.1" 200 85
+INFO 2018-11-05 18:27:45,972 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1197
+INFO 2018-11-05 18:27:46,079 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1197
+INFO 2018-11-05 18:27:50,372 basehttp 124 "GET /addresses/ HTTP/1.1" 200 292
+INFO 2018-11-05 18:27:50,460 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2018-11-05 18:27:52,863 basehttp 124 "OPTIONS /addresses/1/status/ HTTP/1.1" 200 0
+INFO 2018-11-05 18:27:53,186 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 200 16
+INFO 2018-11-05 18:27:56,920 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 18:27:57,353 basehttp 124 "GET /cart/ HTTP/1.1" 200 713
+INFO 2018-11-05 18:28:01,085 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 692
+INFO 2018-11-05 18:28:01,158 basehttp 124 "GET /addresses/ HTTP/1.1" 200 289
+INFO 2018-11-05 19:50:27,394 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 19:50:27,485 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+WARNING 2018-11-05 19:50:27,496 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 19:50:27,518 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 10507
+INFO 2018-11-05 19:50:27,644 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-11-05 19:50:33,362 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2018-11-05 19:50:37,620 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2018-11-05 19:50:44,763 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2018-11-05 19:50:47,263 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2018-11-05 19:51:10,783 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2018-11-05 19:52:00,638 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2018-11-05 19:54:33,224 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+WARNING 2018-11-05 19:54:44,344 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 19:54:44,440 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 10507
+INFO 2018-11-05 19:54:44,646 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-11-05 19:54:44,762 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2018-11-05 19:54:53,192 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2018-11-05 19:55:01,072 basehttp 124 "GET /cart/ HTTP/1.1" 200 501
+INFO 2018-11-05 19:55:07,015 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2018-11-05 19:55:31,047 basehttp 124 "GET /cart/ HTTP/1.1" 200 501
+INFO 2018-11-05 19:57:40,878 basehttp 124 "GET /cart/ HTTP/1.1" 200 501
+INFO 2018-11-05 19:57:57,448 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2018-11-05 19:58:01,133 basehttp 124 "GET /cart/ HTTP/1.1" 200 501
+INFO 2018-11-05 19:58:05,539 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-11-05 19:58:08,506 basehttp 124 "GET /cart/ HTTP/1.1" 200 502

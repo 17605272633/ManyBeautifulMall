@@ -97,6 +97,8 @@ class CartView(APIView):
         count = cart_serializer.validated_data.get('count')
         selected = cart_serializer.validated_data.get('selected')
 
+        response = Response(cart_serializer.data, status=status.HTTP_201_CREATED)
+
         # 若用户不为空且已登录
         if user is not None and user.is_authenticated:
             # 用户登录,将数据保存到redis中
@@ -108,10 +110,6 @@ class CartView(APIView):
             if selected:
                 # 默认勾选
                 redis_conn.sadd('cart_selected_%s' % user.id, sku_id)
-
-            response = Response(cart_serializer.data, status=status.HTTP_201_CREATED)
-
-            return response
 
         # 用户未登录,将数据保存到cookie中
         else:
@@ -134,10 +132,6 @@ class CartView(APIView):
                 # 为空,返回空字典
                 cart_dict = {}
 
-            # 判断当前商品是否已有数据,有则覆盖掉已有数据
-            if sku_id in cart_dict:
-                count = cart_dict[sku_id]['count']
-
             # 将数据以正确的格式添加
             cart_dict[sku_id] = {
                 'count': count,
@@ -147,12 +141,11 @@ class CartView(APIView):
             # 将cookie数据序列化为bytes类型并编码
             cookie_cart = myjson.dumps(cart_dict)
 
-            response = Response(cart_serializer.data, status=status.HTTP_201_CREATED)
-
             # 设置购物车的cookie
             # 需要设置有效期，否则是临时cookie
             response.set_cookie('cart', cookie_cart, max_age=constants.CART_COOKIE_EXPIRES)
-            return response
+
+        return response
 
     def put(self, request):
         """

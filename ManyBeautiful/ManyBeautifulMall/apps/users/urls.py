@@ -21,7 +21,6 @@ urlpatterns = [
     url(r'^emails/verification/$', views.VerifyEmailView.as_view()),
     # 用户历史记录
     url('^browse_histories/$', views.UserBrowsingHistoryView.as_view()),
-
 ]
 
 

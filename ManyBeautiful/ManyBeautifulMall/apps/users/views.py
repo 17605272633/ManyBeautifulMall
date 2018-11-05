@@ -298,9 +298,12 @@ class UserAuthorizeView(ObtainJSONWebToken):
         # 仿照drf jwt扩展对于用户登录的认证方式，判断用户是否认证登录成功
         serializer = self.get_serializer(data=request.data)
 
+        # 获取用户id
+        user_id = response.data.get('user_id')
+
         # 如果用户登录认证成功，则合并购物车
         if serializer.is_valid():
-            user = serializer.validated_data.get('user')
-            response = merge_cart_cookie_to_redis(request, user, response)
+            # user = serializer.validated_data.get('user')
+            response = merge_cart_cookie_to_redis(request, user_id, response)
 
         return response
