@@ -39,7 +39,9 @@ class CartView(APIView):
             # 获取redis中存储的信息
             redis_cart_id = redis_conn.hkeys('cart_%s' % user.id)
             redis_cart_selected = redis_conn.smembers('cart_selected_%s' % user.id)
+            print(redis_cart_selected)
             redis_cart_selected = [int(sku_id) for sku_id in redis_cart_selected]
+            print(redis_cart_selected)
 
             # 查询商品
             skus = SKU.objects.filter(pk__in=redis_cart_id)
