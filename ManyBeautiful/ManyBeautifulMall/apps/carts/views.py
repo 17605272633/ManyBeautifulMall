@@ -46,7 +46,7 @@ class CartView(APIView):
             # 为商品添加额外两个属性
             for sku in skus:
                 sku.count = redis_conn.hget('cart_%s' % user.id, sku.id)
-                sku.selected = sku.id in redis_cart_selected
+                sku.selected = sku.id in redis_cart_selected  # 在,则为True,不在则为False
 
         else:
             # 用户未登录，从cookie中读取

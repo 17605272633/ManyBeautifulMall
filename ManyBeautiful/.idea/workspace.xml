@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f52597a-5f34-4acb-8203-0049c9301dee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/utils/myjson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/carts/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManyBeautifulMall/apps/carts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/carts/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManyBeautifulMall/apps/carts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/carts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ManyBeautifulMall/apps/carts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/carts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/settings/dev.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/meiduo.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/meiduo.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,7 +84,7 @@
           <entry key="html" value="13" />
           <entry key="js" value="4" />
           <entry key="log" value="11" />
-          <entry key="py" value="311" />
+          <entry key="py" value="320" />
           <entry key="sql" value="22" />
           <entry key="tb_address" value="2" />
           <entry key="tb_areas" value="7" />
@@ -105,7 +106,7 @@
           <entry key="HTML" value="13" />
           <entry key="JavaScript" value="4" />
           <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="311" />
+          <entry key="Python" value="320" />
           <entry key="SQL" value="6" />
           <entry key="Scratch" value="16" />
           <entry key="YAML" value="5" />
@@ -116,16 +117,16 @@
           <entry key="cell" value="5" />
           <entry key="conf" value="25" />
           <entry key="js" value="39" />
-          <entry key="py" value="19356" />
+          <entry key="py" value="20117" />
           <entry key="sql" value="96" />
-          <entry key="txt" value="219" />
+          <entry key="txt" value="238" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="39" />
-          <entry key="PLAIN_TEXT" value="244" />
-          <entry key="Python" value="19356" />
+          <entry key="PLAIN_TEXT" value="263" />
+          <entry key="Python" value="20117" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="100" />
         </counts>
@@ -136,36 +137,180 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/carts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="46" column="72" lean-forward="true" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
+            <state relative-caret-position="263">
+              <caret line="103" column="62" selection-start-line="103" selection-start-column="57" selection-end-line="103" selection-end-column="62" />
               <folding>
                 <element signature="e#505#657#0" />
-                <element signature="e#2312#4843#0" />
+                <element signature="e#505#561#0" />
+                <element signature="e#690#2237#0" />
+                <element signature="e#690#886#1" />
+                <element signature="e#1073#1696#0" />
+                <element signature="e#1557#1696#0" />
+                <element signature="e#1610#2108#0" />
+                <element signature="e#1830#1841#0" />
+                <element signature="e#1954#2108#0" />
+                <element signature="e#2249#2515#1" />
+                <element signature="e#2720#2765#0" />
+                <element signature="e#3618#4843#0" />
+                <element signature="e#3618#3843#1" />
+                <element signature="e#3914#3980#0" />
+                <element signature="e#4102#4138#0" />
+                <element signature="e#4379#4463#0" />
+                <element signature="e#4675#4689#0" />
                 <element signature="e#4793#6708#0" />
+                <element signature="e#4793#4962#1" />
+                <element signature="e#5072#5109#0" />
+                <element signature="e#5596#5989#0" />
+                <element signature="e#5789#5871#0" />
+                <element signature="e#5906#5989#0" />
+                <element signature="e#6045#6683#0" />
+                <element signature="e#6171#6246#0" />
+                <element signature="e#6281#6322#0" />
+                <element signature="e#6356#6440#0" />
+                <element signature="e#6543#6557#0" />
                 <element signature="e#7007#8886#0" />
+                <element signature="e#7007#7108#1" />
+                <element signature="e#7177#7214#0" />
+                <element signature="e#7589#7896#0" />
+                <element signature="e#7952#8886#0" />
+                <element signature="e#8070#8725#0" />
+                <element signature="e#8264#8725#0" />
+                <element signature="e#8533#8547#0" />
+                <element signature="e#8761#8886#0" />
                 <element signature="e#8805#11303#0" />
+                <element signature="e#8884#9048#0" />
+                <element signature="e#8884#8940#0" />
+                <element signature="e#9094#11303#0" />
+                <element signature="e#9094#9260#1" />
+                <element signature="e#9390#9431#0" />
+                <element signature="e#9735#10284#0" />
+                <element signature="e#9992#10072#0" />
+                <element signature="e#10115#10197#0" />
+                <element signature="e#10320#11303#0" />
+                <element signature="e#10320#10338#0" />
+                <element signature="e#10494#11142#0" />
+                <element signature="e#10950#10964#0" />
+                <element signature="e#11186#11303#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../front_end_pc/js/cart.js">
+        <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/carts/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="130" column="41" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="41" />
+            <state relative-caret-position="332">
+              <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+                <marker date="1541383946341" expanded="true" signature="130:1764" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../front_end_pc/cart.html">
+        <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="57" column="104" selection-start-line="57" selection-start-column="89" selection-end-line="57" selection-end-column="104" />
+            <state relative-caret-position="398">
+              <caret line="74" column="26" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="303" selection-start-line="303" selection-end-line="303" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#889#1387#0" />
+                <element signature="e#955#1387#0" />
+                <element signature="e#955#1146#1" />
+                <element signature="e#1265#1337#0" />
+                <element signature="e#1443#1880#0" />
+                <element signature="e#1509#1880#0" />
+                <element signature="e#1509#1704#1" />
+                <element signature="e#1781#1849#0" />
+                <element signature="e#1934#2162#0" />
+                <element signature="e#1934#2117#1" />
+                <element signature="e#2219#2548#0" />
+                <element signature="e#2373#2396#0" />
+                <element signature="e#2524#2548#0" />
+                <element signature="e#2596#2783#0" />
+                <element signature="e#2759#2783#0" />
+                <element signature="e#2829#3865#0" />
+                <element signature="e#2877#3865#0" />
+                <element signature="e#2877#3013#1" />
+                <element signature="e#3022#3033#0" />
+                <element signature="e#3923#6930#0" />
+                <element signature="e#3923#4192#1" />
+                <element signature="e#4333#4418#0" />
+                <element signature="e#4491#5012#0" />
+                <element signature="e#4491#4570#1" />
+                <element signature="e#4804#5011#0" />
+                <element signature="e#5086#5444#0" />
+                <element signature="e#5086#5166#1" />
+                <element signature="e#5557#5815#0" />
+                <element signature="e#5557#5612#1" />
+                <element signature="e#5907#6258#0" />
+                <element signature="e#5907#6034#1" />
+                <element signature="e#6349#6930#0" />
+                <element signature="e#6349#6455#1" />
+                <element signature="e#6520#6599#0" />
+                <element signature="e#6996#7930#0" />
+                <element signature="e#6996#7054#1" />
+                <element signature="e#7143#7304#0" />
+                <element signature="e#7342#7930#0" />
+                <element signature="e#7342#7436#1" />
+                <element signature="e#7710#7736#0" />
+                <marker date="1541383753233" expanded="false" signature="7098:7412" ph="..." />
+                <marker date="1541383753233" expanded="true" signature="8098:8596" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/users/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/utils/myjson.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1541318630369" expanded="true" signature="197:325" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -237,9 +382,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/celery_tasks/main.py" />
-        <option value="$PROJECT_DIR$/celery_tasks/email/tasks.py" />
-        <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/areas/urls.py" />
         <option value="$PROJECT_DIR$/../front_end_pc/success_verify_email.html" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/areas/serializers.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/areas/views.py" />
@@ -276,10 +418,8 @@
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/users/serializers.py" />
         <option value="$PROJECT_DIR$/../front_end_pc/user_center_info.html" />
         <option value="$PROJECT_DIR$/../front_end_pc/js/user_center_info.js" />
-        <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/users/urls.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/goods/views.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/utils/pagination.py" />
-        <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/goods/search_indexes.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/carts/constants.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/urls.py" />
@@ -288,6 +428,11 @@
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/carts/urls.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/carts/serializers.py" />
         <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/carts/views.py" />
+        <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py" />
+        <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/users/urls.py" />
+        <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/carts/utils.py" />
+        <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/serializers.py" />
+        <option value="$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/views.py" />
       </list>
     </option>
   </component>
@@ -321,11 +466,6 @@
             <path>
               <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
               <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
-              <item name="celery_tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
               <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -345,13 +485,15 @@
               <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
               <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
               <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ManyBeautiful" type="b2602c69:ProjectViewProjectNode" />
               <item name="ManyBeautiful" type="462c0819:PsiDirectoryNode" />
               <item name="ManyBeautifulMall" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -586,7 +728,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541304274143</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="购物车_增删改查全选全部实现,代码优化">
+      <created>1541349828907</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1541349828910</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -599,15 +748,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1549" height="835" extended-state="6" />
+    <frame x="64" y="-11" width="1215" height="883" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987013" weight="0.1863224" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987013" visible="true" weight="0.14773698" />
       <window_info id="Structure" order="1" sideWeight="0.5012987" side_tool="true" weight="0.12382532" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32628798" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.296875" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30319148" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32987013" />
@@ -674,51 +823,21 @@
     <MESSAGE value="购物车_查(未验证)" />
     <MESSAGE value="购物车_改(未验证)" />
     <MESSAGE value="购物车_删(未验证)" />
-    <option name="LAST_COMMIT_MESSAGE" value="购物车_删(未验证)" />
+    <MESSAGE value="购物车_增删改查全选全部实现,代码优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="购物车_增删改查全选全部实现,代码优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ManyBeautifulMall/apps/carts/views.py</url>
-          <line>171</line>
+          <line>172</line>
           <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ManyBeautifulMall/apps/carts/views.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/utils/fastdfs/fdfs_storage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1392">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/celery_tasks/html/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3306">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../front_end_pc/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3045" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="108" column="21" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/contents/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
@@ -835,9 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/users/utils.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/pagination.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -845,24 +961,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/users/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/manager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="201" selection-start-line="201" selection-end-line="201" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3886">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -933,17 +1035,6 @@
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/utils/myjson.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1541318630369" expanded="true" signature="197:325" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1024,6 +1115,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../front_end_pc/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="57" column="104" selection-start-line="57" selection-start-column="89" selection-end-line="57" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../front_end_pc/js/cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="130" column="41" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/utils/myjson.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1541318630369" expanded="true" signature="197:325" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/carts/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -1036,30 +1152,171 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../front_end_pc/js/cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="130" column="41" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../front_end_pc/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="57" column="104" selection-start-line="57" selection-start-column="89" selection-end-line="57" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/carts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="46" column="72" lean-forward="true" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
+        <state relative-caret-position="263">
+          <caret line="103" column="62" selection-start-line="103" selection-start-column="57" selection-end-line="103" selection-end-column="62" />
           <folding>
             <element signature="e#505#657#0" />
-            <element signature="e#2312#4843#0" />
+            <element signature="e#505#561#0" />
+            <element signature="e#690#2237#0" />
+            <element signature="e#690#886#1" />
+            <element signature="e#1073#1696#0" />
+            <element signature="e#1557#1696#0" />
+            <element signature="e#1610#2108#0" />
+            <element signature="e#1830#1841#0" />
+            <element signature="e#1954#2108#0" />
+            <element signature="e#2249#2515#1" />
+            <element signature="e#2720#2765#0" />
+            <element signature="e#3618#4843#0" />
+            <element signature="e#3618#3843#1" />
+            <element signature="e#3914#3980#0" />
+            <element signature="e#4102#4138#0" />
+            <element signature="e#4379#4463#0" />
+            <element signature="e#4675#4689#0" />
             <element signature="e#4793#6708#0" />
+            <element signature="e#4793#4962#1" />
+            <element signature="e#5072#5109#0" />
+            <element signature="e#5596#5989#0" />
+            <element signature="e#5789#5871#0" />
+            <element signature="e#5906#5989#0" />
+            <element signature="e#6045#6683#0" />
+            <element signature="e#6171#6246#0" />
+            <element signature="e#6281#6322#0" />
+            <element signature="e#6356#6440#0" />
+            <element signature="e#6543#6557#0" />
             <element signature="e#7007#8886#0" />
+            <element signature="e#7007#7108#1" />
+            <element signature="e#7177#7214#0" />
+            <element signature="e#7589#7896#0" />
+            <element signature="e#7952#8886#0" />
+            <element signature="e#8070#8725#0" />
+            <element signature="e#8264#8725#0" />
+            <element signature="e#8533#8547#0" />
+            <element signature="e#8761#8886#0" />
             <element signature="e#8805#11303#0" />
+            <element signature="e#8884#9048#0" />
+            <element signature="e#8884#8940#0" />
+            <element signature="e#9094#11303#0" />
+            <element signature="e#9094#9260#1" />
+            <element signature="e#9390#9431#0" />
+            <element signature="e#9735#10284#0" />
+            <element signature="e#9992#10072#0" />
+            <element signature="e#10115#10197#0" />
+            <element signature="e#10320#11303#0" />
+            <element signature="e#10320#10338#0" />
+            <element signature="e#10494#11142#0" />
+            <element signature="e#10950#10964#0" />
+            <element signature="e#11186#11303#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/users/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework_jwt/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2668">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/users/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="303" selection-start-line="303" selection-end-line="303" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#889#1387#0" />
+            <element signature="e#955#1387#0" />
+            <element signature="e#955#1146#1" />
+            <element signature="e#1265#1337#0" />
+            <element signature="e#1443#1880#0" />
+            <element signature="e#1509#1880#0" />
+            <element signature="e#1509#1704#1" />
+            <element signature="e#1781#1849#0" />
+            <element signature="e#1934#2162#0" />
+            <element signature="e#1934#2117#1" />
+            <element signature="e#2219#2548#0" />
+            <element signature="e#2373#2396#0" />
+            <element signature="e#2524#2548#0" />
+            <element signature="e#2596#2783#0" />
+            <element signature="e#2759#2783#0" />
+            <element signature="e#2829#3865#0" />
+            <element signature="e#2877#3865#0" />
+            <element signature="e#2877#3013#1" />
+            <element signature="e#3022#3033#0" />
+            <element signature="e#3923#6930#0" />
+            <element signature="e#3923#4192#1" />
+            <element signature="e#4333#4418#0" />
+            <element signature="e#4491#5012#0" />
+            <element signature="e#4491#4570#1" />
+            <element signature="e#4804#5011#0" />
+            <element signature="e#5086#5444#0" />
+            <element signature="e#5086#5166#1" />
+            <element signature="e#5557#5815#0" />
+            <element signature="e#5557#5612#1" />
+            <element signature="e#5907#6258#0" />
+            <element signature="e#5907#6034#1" />
+            <element signature="e#6349#6930#0" />
+            <element signature="e#6349#6455#1" />
+            <element signature="e#6520#6599#0" />
+            <element signature="e#6996#7930#0" />
+            <element signature="e#6996#7054#1" />
+            <element signature="e#7143#7304#0" />
+            <element signature="e#7342#7930#0" />
+            <element signature="e#7342#7436#1" />
+            <element signature="e#7710#7736#0" />
+            <marker date="1541383753233" expanded="false" signature="7098:7412" ph="..." />
+            <marker date="1541383753233" expanded="true" signature="8098:8596" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/carts/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <marker date="1541383946341" expanded="true" signature="130:1764" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="74" column="26" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/oauth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>

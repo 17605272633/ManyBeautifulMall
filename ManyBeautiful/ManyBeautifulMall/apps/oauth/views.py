@@ -1,6 +1,7 @@
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from carts.utils import merge_cart_cookie_to_redis
 from oauth.exceptions import QQAPIError
 from oauth.models import OAuthQQUser
 from oauth.serializers import OAuthQQUserSerializer
@@ -78,6 +79,9 @@ class QQAuthUserView(APIView):
                 'username': qquser.user.username
             })
 
+            # 合并购物车
+            response = merge_cart_cookie_to_redis(request, user, response)
+
             return response
 
     def post(self, request):
@@ -107,27 +111,7 @@ class QQAuthUserView(APIView):
             'user_id': qquser.id,
             'username': qquser.user.username
         })
+
+        # 合并购物车
+        response = merge_cart_cookie_to_redis(request, user, response)
         return response
-
-
-# class WeiXinAuthURLView(APIView):
-#     """获取微信用户登录的url"""
-#
-#     def get(self, request):
-#         """
-#         点击微信登陆,绑定的路由为/微信/authorization/?next=/, 路由绑定了此视图函数,视图函数返回json形式的,带参数的地址,客户端跳转此地址
-#
-#         请求地址: GET
-#         提供用于qq登录的url
-#         :param request: 包含: next 用户QQ登录成功后进入美多商城的哪个网址
-#         :return: {
-#                     "login_url": 'https://open.weixin.qq.com/connect/qrconnect?' + urlencode(params)
-#                 }
-#         """
-#
-#         next = request.query_params.get('next')
-#         oauth = OAuthWeiXin(state=next)
-#         login_url = oauth.get_weixin_login_url()
-#
-#         return Response({'login_url': login_url})
-#

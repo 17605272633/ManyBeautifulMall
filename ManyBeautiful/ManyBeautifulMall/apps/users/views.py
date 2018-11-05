@@ -7,6 +7,8 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import GenericViewSet, ModelViewSet
+from rest_framework_jwt.views import ObtainJSONWebToken
+from carts.utils import merge_cart_cookie_to_redis
 from goods.models import SKU
 from goods.serializers import SKUSerializer
 from users.models import User
@@ -284,22 +286,21 @@ class UserBrowsingHistoryView(ListCreateAPIView):
         return skus  # [sku,sku,sku,...]
 
 
+# 用户登陆(合并购物车)
+class UserAuthorizeView(ObtainJSONWebToken):
+    """
+    用户认证
+    """
+    def post(self, request, *args, **kwargs):
+        # 调用父类的方法，获取drf jwt扩展默认的认证用户处理结果
+        response = super().post(request, *args, **kwargs)
 
+        # 仿照drf jwt扩展对于用户登录的认证方式，判断用户是否认证登录成功
+        serializer = self.get_serializer(data=request.data)
 
-"""
+        # 如果用户登录认证成功，则合并购物车
+        if serializer.is_valid():
+            user = serializer.validated_data.get('user')
+            response = merge_cart_cookie_to_redis(request, user, response)
 
-{
-"count":5,
-"next":"http://api.meiduo.site:8000/browse_histories/?page=2",
-"previous":null,
-"results":[
-    {
-        "id":13,
-        "name":"华为 HUAWEI P10 Plus 6GB+64GB 玫瑰金 移动联通电信4G手机 双卡双待",
-        "price":"3388.00",
-        "default_image_url":"http://image.meiduo.site:8888/group1/M00/00/02/CtM3BVrRdLGARgBAAAVslh9vkK00474545",
-        "comments":0
-    },
-     
-    {"id":10,"name":"华为 HUAWEI P10 Plus 6GB+128GB 钻雕金 移动联通电信4G手机 双卡双待","price":"3788.00","default_image_url":"http://image.meiduo.site:8888/group1/M00/00/02/CtM3BVrRchWAMc8rAARfIK95am88158618","comments":5}]}
-"""
+        return response
