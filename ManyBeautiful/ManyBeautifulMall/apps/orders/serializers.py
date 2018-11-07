@@ -56,21 +56,6 @@ class SaveOrderSerializer(serializers.Serializer):
     address = serializers.IntegerField(write_only=True)
     pay_method = serializers.IntegerField(write_only=True)
 
-    # class Meta:
-    #     model = OrderInfo
-    #     fields = ('order_id', 'address', 'pay_method')
-    #     read_only_fields = ('order_id',)
-    #     extra_kwargs = {
-    #         'address': {
-    #             'write_only': True,
-    #             'required': True,
-    #         },
-    #         'pay_method': {
-    #             'write_only': True,
-    #             'required': True
-    #         }
-    #     }
-
     """验证"""
     def validated_address(self, value):
         count = Address.objects.filter(pk=value).count()
@@ -189,7 +174,7 @@ class SaveOrderSerializer(serializers.Serializer):
 
                 # 更新订单的金额数量信息
                 # 记录订单基本信息的数据
-                order.total_count += sku_count  # 累计总金额
+                order.total_count += sku_count  # 累计数量
                 order.total_amount += (sku.price * sku_count)  # 累计总额
                 order.total_amount += order.freight
                 order.save()
@@ -210,3 +195,85 @@ class SaveOrderSerializer(serializers.Serializer):
             redis_conn.srem('cart_selected_%s' % user.id, *cart_selected)
 
             return order
+
+    # def create(self, validated_data):
+    #
+    #     # 获取当前登陆用户信息
+    #     user = self.context['request'].user
+    #     # 生成订单编号
+    #     order_id = timezone.now().strftime('%Y%m%d%H%M%S') + ('%09d' % user.id)
+    #     # 保存订单基本信息
+    #     address = validated_data.get('address')
+    #     pay_method = validated_data.get('pay_method')
+    #
+    #     # 生成订单数据
+    #     # 创建订单信息
+    #
+    #     order = OrderInfo()
+    #     order.total_count = 0
+    #     order.total_amount = 0
+    #     order.order_id = order_id
+    #     order.user = user
+    #     order.address = Address.objects.get(pk=address)
+    #     order.freight = 10
+    #     order.pay_method = pay_method
+    #     # order.status =
+    #     order.save()
+    #
+    #     # 从获取购物车信息
+    #     redis_conn = get_redis_connection('cart')
+    #     redis_cart = redis_conn.hgetall("cart_%s" % user.id)
+    #     cart_selected = redis_conn.smembers('cart_selected_%s' % user.id)
+    #
+    #     cart_selected_int = [int(sku_id) for sku_id in cart_selected]
+    #
+    #     cart_dict = {}
+    #     """
+    #     {
+    #         sku_id : count
+    #     }
+    #     """
+    #     for sku_id in cart_selected:
+    #         cart_dict[int(sku_id)] = int(redis_cart[sku_id])
+    #
+    #     # 获取商品列表
+    #     skus = SKU.objects.filter(pk__in=cart_dict.keys())
+    #     # 遍历获取信息
+    #
+    #     for sku in skus:
+    #         # 当前要购买商品数量
+    #         count = cart_dict.get(sku.id)
+    #         print(count)
+    #         # 判断商品库存是否充足
+    #         stock = sku.stock
+    #         print(stock)
+    #         sales = sku.sales
+    #         if count > stock:
+    #             raise ValidationError("超过库存")
+    #
+    #         # 减少商品库存，增加商品销量
+    #         new_stock = stock - count
+    #         new_sales = sales + count
+    #
+    #         sku.stock = new_stock
+    #         sku.sales = new_sales
+    #         sku.save()
+    #
+    #         # 更新订单商品数量,总金额数据
+    #         order.total_count += count
+    #         order.total_amount += (count * sku.price)
+    #         order.total_amount += order.freight
+    #         order.save()
+    #     # except ValidationError:
+    #     #     raise
+    #     # except Exception as e:
+    #     #     logger.error(e)
+    #     #     # 回滚到保存点
+    #     #     # transaction.savepoint_rollback(save_id)
+    #     #     raise
+    #
+    #     # 更新redis中保存的购物车数据
+    #     redis_conn.hdel('cart_%s' % user.id, *cart_selected_int)
+    #     redis_conn.srem("cart_selected_%s" % user.id, *cart_selected_int)
+    #
+    #     return order
