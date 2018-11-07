@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'contents.apps.ContentsConfig',
     'carts.apps.CartsConfig',
     'orders.apps.OrdersConfig',
+    'payments.apps.PaymentsConfig',
 
     'rest_framework',
     'corsheaders',  # 使用CORS来解决后端对跨域访问的支持
@@ -336,3 +337,8 @@ HAYSTACK_CONNECTIONS = {
 # 当添加、修改、删除数据时，自动生成索引  es自动重建索引
 # 保证了在Django运行起来后，有新的数据产生时，haystack仍然可以让Elasticsearch实时生成新数据的索引
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+
+# 支付宝
+ALIPAY_APPID = "2016092000555904"
+ALIPAY_URL = "https://openapi.alipaydev.com/gateway.do"
+ALIPAY_DEBUG = True
