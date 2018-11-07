@@ -119,16 +119,16 @@
           <entry key="conf" value="25" />
           <entry key="js" value="39" />
           <entry key="pem" value="3" />
-          <entry key="py" value="24277" />
+          <entry key="py" value="24610" />
           <entry key="sql" value="96" />
-          <entry key="txt" value="342" />
+          <entry key="txt" value="346" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="39" />
-          <entry key="PLAIN_TEXT" value="370" />
-          <entry key="Python" value="24277" />
+          <entry key="PLAIN_TEXT" value="374" />
+          <entry key="Python" value="24610" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="109" />
         </counts>
@@ -156,14 +156,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/payments/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="21" column="52" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="52" />
+            <state relative-caret-position="593">
+              <caret line="117" selection-start-line="117" selection-end-line="117" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1541558962963" expanded="true" signature="347:2233" ph="..." />
+                <element signature="e#326#2201#0" />
+                <marker date="1541567076440" expanded="true" signature="2284:3918" ph="..." />
               </folding>
             </state>
           </provider>
@@ -178,11 +179,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/payments/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="203">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -731,7 +732,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541556908000</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="发起支付">
+      <created>1541561931495</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1541561931495</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView">
@@ -746,7 +754,7 @@
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1445" height="861" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49719626" visible="true" weight="0.15488936" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49719626" visible="true" weight="0.15488936" />
       <window_info id="Structure" order="1" sideWeight="0.5012987" side_tool="true" weight="0.12382532" />
       <window_info id="Favorites" order="2" sideWeight="0.50280374" side_tool="true" weight="0.16131335" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -759,7 +767,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32857144" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32739726" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.501382" side_tool="true" weight="0.21720733" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49872124" weight="0.26712328" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49872124" visible="true" weight="0.26712328" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32597402" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.3259053" />
       <window_info anchor="bottom" id="Debug" order="13" weight="0.31875882" />
@@ -825,7 +833,8 @@
     <MESSAGE value="购物车所有功能完成,之前的BUG解决" />
     <MESSAGE value="代码优化" />
     <MESSAGE value="支付宝支付功能基本配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="支付宝支付功能基本配置" />
+    <MESSAGE value="发起支付" />
+    <option name="LAST_COMMIT_MESSAGE" value="发起支付" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/options.py">
@@ -1298,23 +1307,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/payments/urls.py">
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/payments/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="593">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#326#2201#0" />
+            <marker date="1541567076440" expanded="true" signature="2284:3918" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/payments/views.py">
+    <entry file="file://$PROJECT_DIR$/ManyBeautifulMall/apps/payments/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="21" column="52" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="52" />
+        <state relative-caret-position="203">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1541558962963" expanded="true" signature="347:2233" ph="..." />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>

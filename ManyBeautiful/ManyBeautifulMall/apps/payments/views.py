@@ -1,18 +1,19 @@
 import os
-
 from alipay import AliPay
 from django.conf import settings
-from django.shortcuts import render
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
-
 from orders.models import OrderInfo
 
 
+# 支付宝支付视图类
+from payments.models import Payment
+
+
 class PaymentView(APIView):
-    """支付宝支付视图函数"""
+    """支付宝支付视图类"""
     # 用户登陆验证
     permission_classes = [IsAuthenticated]
 
@@ -63,6 +64,53 @@ class PaymentView(APIView):
         }
 
         return Response(data)
+
+
+# 支付结果视图类
+class PaymentStatusView(APIView):
+    """支付结果视图类"""
+
+    def put(self, request):
+        """
+
+        :param request: request.query_params.dict()可以获得
+                        out_trade_no 商户网站唯一订单号
+                        trade_no 该交易在支付宝中的流水号
+                        total_amount 订单总额
+                        seller_id 收款支付宝账号的用户号
+        :return: trade_id支付宝流水号
+
+        """
+        # 获取查询字符串数据
+        data = request.query_params.dict()
+        signature = data.pop('sign')
+
+        alipay = AliPay(
+            appid=settings.ALIPAY_APPID,
+            app_notify_url=None,  # 默认回调路径
+            app_private_key_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "keys/app_private_key.pem"),
+            alipay_public_key_path=os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                                "keys/alipay_public_key.pem"),
+            sign_type="RSA2",
+            debug=settings.ALIPAY_DEBUG
+        )
+
+        success = alipay.verify(data, signature)
+
+        if success:
+            # 订单编号
+            order_id = data.get('out_trade_no')  # out_trade_no 商户网站唯一订单号
+            # 支付宝支付流水号
+            trade_id = data.get('trade_no')  # trade_no 该交易在支付宝中的流水号
+            Payment.objects.create(
+                order_id=order_id,
+                trade_id=trade_id
+            )
+            order = OrderInfo.objects.filter(order_id=order_id, status=OrderInfo.ORDER_STATUS_ENUM['UNPAID']).update(
+                status=OrderInfo.ORDER_STATUS_ENUM["UNCOMMENT"])
+            return Response({'trade_id': trade_id})
+        else:
+            return Response({'message': '非法请求'}, status=status.HTTP_403_FORBIDDEN)
 
 
 
