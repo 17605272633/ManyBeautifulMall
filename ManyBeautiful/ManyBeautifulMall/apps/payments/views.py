@@ -6,12 +6,10 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from orders.models import OrderInfo
-
-
-# 支付宝支付视图类
 from payments.models import Payment
 
 
+# 支付宝支付视图类
 class PaymentView(APIView):
     """支付宝支付视图类"""
     # 用户登陆验证
@@ -39,9 +37,11 @@ class PaymentView(APIView):
         alipay = AliPay(
             appid= settings.ALIPAY_APPID,
             app_notify_url=None,  # 默认回调路径
-            app_private_key_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "keys/app_private_key.pem"),
-            # 支付宝的公钥，验证支付宝回传消息使用，是自己从阿里获取的公钥
-            alipay_public_key_path=os.path.join(os.path.dirname(os.path.abspath(__file__)),"keys/alipay_public_key.pem"),
+            # app_private_key_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "keys/app_private_key.pem"),
+            # # 支付宝的公钥，验证支付宝回传消息使用，是自己从阿里获取的公钥
+            # alipay_public_key_path=os.path.join(os.path.dirname(os.path.abspath(__file__)),"keys/alipay_public_key.pem"),
+            app_private_key_path=settings.ALIPAY_PRIVATE_KEY_PATH,
+            alipay_public_key_path=settings.ALIPAY_PUBLIC_KEY_PATH,
             sign_type="RSA2",
             debug=settings.ALIPAY_DEBUG
         )
@@ -49,10 +49,10 @@ class PaymentView(APIView):
         # 调用支付宝的接口
         order_string = alipay.api_alipay_trade_page_pay(
             out_trade_no=order_id,
-            total_amount=str(order.total_amount),
+            total_amount=str(order.total_amount),  # 不支持序列化,需要转成str
             subject="美多商城%s" % order_id,
-            return_url="http://www.meiduo.site:8080/pay_success.html",
-            notify_url="https://example.com/notify"  # 可选, 不填则使用默认notify url
+            return_url=settings.ALIPAY_RETURN_URL,
+            # notify_url="https://example.com/notify"  # 可选, 不填则使用默认notify url
         )
 
         # 电脑网站支付，需要跳转到https://openapi.alipay.com/gateway.do? + order_string
@@ -66,9 +66,9 @@ class PaymentView(APIView):
         return Response(data)
 
 
-# 支付结果视图类
+# 修改支付状态视图类
 class PaymentStatusView(APIView):
-    """支付结果视图类"""
+    """修改支付状态视图类"""
 
     def put(self, request):
         """
@@ -81,8 +81,9 @@ class PaymentStatusView(APIView):
         :return: trade_id支付宝流水号
 
         """
-        # 获取查询字符串数据
+        # 接收支付宝返回的数据
         data = request.query_params.dict()
+        # 删除签名,签名不参与验证
         signature = data.pop('sign')
 
         alipay = AliPay(
@@ -95,20 +96,28 @@ class PaymentStatusView(APIView):
             debug=settings.ALIPAY_DEBUG
         )
 
+        # 验证
         success = alipay.verify(data, signature)
 
         if success:
-            # 订单编号
+            # 获取订单编号
             order_id = data.get('out_trade_no')  # out_trade_no 商户网站唯一订单号
-            # 支付宝支付流水号
+            # 获取支付宝支付流水号
             trade_id = data.get('trade_no')  # trade_no 该交易在支付宝中的流水号
+
             Payment.objects.create(
                 order_id=order_id,
                 trade_id=trade_id
             )
-            order = OrderInfo.objects.filter(order_id=order_id, status=OrderInfo.ORDER_STATUS_ENUM['UNPAID']).update(
-                status=OrderInfo.ORDER_STATUS_ENUM["UNCOMMENT"])
+
+            # 修改订单状态
+            try:
+                OrderInfo.objects.filter(order_id=order_id, status=OrderInfo.ORDER_STATUS_ENUM['UNPAID']).update(status = OrderInfo.ORDER_STATUS_ENUM["UNCOMMENT"])
+            except Exception as e:
+                raise
+
             return Response({'trade_id': trade_id})
+
         else:
             return Response({'message': '非法请求'}, status=status.HTTP_403_FORBIDDEN)
 

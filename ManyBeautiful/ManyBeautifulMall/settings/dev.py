@@ -63,6 +63,9 @@ INSTALLED_APPS = [
     'ckeditor_uploader',  # 富文本编辑器上传图片模块
     'django_crontab',  # 定时任务
     'haystack',  # 模块化的搜索
+    'xadmin',
+    'crispy_forms',
+    'reversion',
 ]
 
 MIDDLEWARE = [
@@ -342,3 +345,8 @@ HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 ALIPAY_APPID = "2016092000555904"
 ALIPAY_URL = "https://openapi.alipaydev.com/gateway.do"
 ALIPAY_DEBUG = True
+ALIPAY_PRIVATE_KEY_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                                       "apps/payments/keys/app_private_key.pem")
+ALIPAY_PUBLIC_KEY_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                                      "apps/payments/keys/alipay_public_key.pem")
+ALIPAY_RETURN_URL = "http://www.meiduo.site:8080/pay_success.html"

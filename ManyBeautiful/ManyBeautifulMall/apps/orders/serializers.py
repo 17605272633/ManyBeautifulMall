@@ -149,9 +149,11 @@ class SaveOrderSerializer(serializers.Serializer):
 
                         # 乐观锁
                         # 根据原始库存条件更新,更新成功则返回跟新条目,更新失败则跳出本次循环
-                        ret = SKU.objects.filter(id=sku.id, stock=origin_stock).update(stock=new_stock, sales=new_sales)
-                        if ret == 0:
-                            continue
+                        result = SKU.objects.filter(id=sku.id, stock=origin_stock).update(stock=new_stock, sales=new_sales)
+                        if result == 0:  # 修改失败
+                            transaction.savepoint_rollback(save_id)
+                            raise ValidationError('当前购买人数过多,请稍后重试')
+                            # continue
 
                         # 累加商品的SPU销量信息
                         sku.goods.sales += sku_count

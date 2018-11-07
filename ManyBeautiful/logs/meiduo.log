@@ -13427,3 +13427,304 @@ INFO 2018-11-07 13:07:01,420 basehttp 124 "GET /addresses/ HTTP/1.1" 200 289
 INFO 2018-11-07 13:07:03,892 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 29
 INFO 2018-11-07 13:07:03,983 basehttp 124 "GET /addresses/ HTTP/1.1" 200 289
 INFO 2018-11-07 13:07:16,002 basehttp 124 "GET /orders/20181107030931000000002/payment/ HTTP/1.1" 200 909
+INFO 2018-11-07 13:20:32,780 basehttp 124 "GET /xadmin/ HTTP/1.1" 200 4366
+INFO 2018-11-07 13:20:32,987 basehttp 124 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2018-11-07 13:20:32,999 basehttp 124 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2018-11-07 13:20:33,000 basehttp 124 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2018-11-07 13:20:33,054 basehttp 124 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2018-11-07 13:20:33,065 basehttp 124 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8324
+INFO 2018-11-07 13:20:33,083 basehttp 124 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2018-11-07 13:20:33,288 basehttp 124 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2018-11-07 13:20:33,369 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2018-11-07 13:20:33,370 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2018-11-07 13:20:33,371 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2018-11-07 13:20:33,390 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4373
+INFO 2018-11-07 13:20:33,408 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2018-11-07 13:20:33,419 basehttp 124 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2018-11-07 13:20:33,428 basehttp 124 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2018-11-07 13:20:33,439 basehttp 124 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2018-11-07 13:20:33,593 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2018-11-07 13:20:33,614 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2018-11-07 13:20:33,927 basehttp 124 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+WARNING 2018-11-07 13:20:34,541 base 152 Not Found: /favicon.ico
+WARNING 2018-11-07 13:20:34,544 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 10956
+INFO 2018-11-07 13:20:38,074 basehttp 124 "POST /xadmin/ HTTP/1.1" 302 0
+WARNING 2018-11-07 13:21:10,761 csrf 160 Forbidden (CSRF token missing or incorrect.): /xadmin/
+WARNING 2018-11-07 13:21:10,855 basehttp 124 "POST /xadmin/ HTTP/1.1" 403 2497
+INFO 2018-11-07 13:22:27,657 basehttp 124 "GET /xadmin/ HTTP/1.1" 200 17527
+INFO 2018-11-07 13:22:53,497 basehttp 124 "GET /admin/ HTTP/1.1" 200 5115
+INFO 2018-11-07 13:22:53,906 basehttp 124 "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+INFO 2018-11-07 13:22:53,915 basehttp 124 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+INFO 2018-11-07 13:22:53,953 basehttp 124 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2018-11-07 13:22:53,990 basehttp 124 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+INFO 2018-11-07 13:22:53,992 basehttp 124 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+INFO 2018-11-07 13:22:54,015 basehttp 124 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+INFO 2018-11-07 13:22:54,054 basehttp 124 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2018-11-07 13:22:54,057 basehttp 124 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2018-11-07 13:23:04,188 basehttp 124 "GET /xadmin/ HTTP/1.1" 200 17527
+INFO 2018-11-07 13:23:04,219 basehttp 124 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,222 basehttp 124 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,297 basehttp 124 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+INFO 2018-11-07 13:23:04,348 basehttp 124 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,357 basehttp 124 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,401 basehttp 124 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,403 basehttp 124 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,435 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2018-11-07 13:23:04,436 basehttp 124 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+INFO 2018-11-07 13:23:04,439 basehttp 124 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,457 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,489 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,493 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,505 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,521 basehttp 124 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,571 basehttp 124 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,573 basehttp 124 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,645 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,647 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:04,664 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 13:23:04,905 basehttp 124 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2018-11-07 13:23:13,099 basehttp 124 "GET /xadmin/goods/goodscategory/ HTTP/1.1" 200 154776
+INFO 2018-11-07 13:23:13,238 basehttp 124 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2018-11-07 13:23:13,276 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2018-11-07 13:23:13,290 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2018-11-07 13:23:13,297 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2018-11-07 13:23:13,319 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2018-11-07 13:23:13,322 basehttp 124 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2018-11-07 13:23:13,332 basehttp 124 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2018-11-07 13:23:13,682 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 13:23:24,465 basehttp 124 "GET /xadmin/users/user/ HTTP/1.1" 200 39550
+INFO 2018-11-07 13:23:24,803 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 13:23:38,475 basehttp 124 "GET /xadmin/users/user/1/update/ HTTP/1.1" 200 36142
+INFO 2018-11-07 13:23:38,577 basehttp 124 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css HTTP/1.1" 200 3729
+INFO 2018-11-07 13:23:38,587 basehttp 124 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 200 10225
+INFO 2018-11-07 13:23:38,613 basehttp 124 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2018-11-07 13:23:38,615 basehttp 124 "GET /static/xadmin/css/xadmin.widget.select-transfer.css HTTP/1.1" 200 2317
+INFO 2018-11-07 13:23:38,616 basehttp 124 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2018-11-07 13:23:38,641 basehttp 124 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2018-11-07 13:23:38,868 basehttp 124 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 200 32656
+INFO 2018-11-07 13:23:38,894 basehttp 124 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 200 2979
+INFO 2018-11-07 13:23:38,897 basehttp 124 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js HTTP/1.1" 200 21112
+INFO 2018-11-07 13:23:38,900 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 200 7546
+INFO 2018-11-07 13:23:38,915 basehttp 124 "GET /static/xadmin/js/xadmin.widget.select-transfer.js HTTP/1.1" 200 8214
+INFO 2018-11-07 13:23:38,960 basehttp 124 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2018-11-07 13:23:38,973 basehttp 124 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2018-11-07 13:23:39,003 basehttp 124 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2018-11-07 13:23:39,015 basehttp 124 "GET /static/xadmin/vendor/select2/select2_locale_zh-hans.js HTTP/1.1" 200 694
+INFO 2018-11-07 13:23:39,174 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 13:23:57,162 basehttp 124 "GET /xadmin/users/user/ HTTP/1.1" 200 39550
+INFO 2018-11-07 13:24:02,226 basehttp 124 "GET /xadmin/auth/group/ HTTP/1.1" 200 26735
+INFO 2018-11-07 13:24:02,495 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 13:24:04,908 basehttp 124 "GET /xadmin/auth/permission/ HTTP/1.1" 200 92708
+INFO 2018-11-07 13:24:05,526 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 13:24:52,753 basehttp 124 "GET /xadmin/ HTTP/1.1" 200 17527
+INFO 2018-11-07 16:52:58,035 basehttp 124 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+INFO 2018-11-07 16:52:58,045 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2018-11-07 16:52:59,476 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 29
+INFO 2018-11-07 16:52:59,712 basehttp 124 "GET /addresses/ HTTP/1.1" 200 289
+INFO 2018-11-07 16:53:00,697 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-07 16:53:01,159 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-07 16:53:06,400 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+WARNING 2018-11-07 16:53:25,515 base 152 Not Found: /categories/157/
+WARNING 2018-11-07 16:53:25,530 basehttp 124 "GET /categories/157/ HTTP/1.1" 404 10968
+INFO 2018-11-07 16:53:25,923 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-07 16:53:26,210 basehttp 124 "GET /categories/157/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 452
+INFO 2018-11-07 16:53:31,689 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-07 16:53:32,345 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-07 16:53:34,751 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-07 16:53:39,135 basehttp 124 "GET /cart/ HTTP/1.1" 200 216
+INFO 2018-11-07 16:53:41,443 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 227
+INFO 2018-11-07 16:53:41,574 basehttp 124 "GET /addresses/ HTTP/1.1" 200 289
+INFO 2018-11-07 16:53:44,249 basehttp 124 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2018-11-07 16:53:45,015 basehttp 124 "POST /orders/ HTTP/1.1" 201 38
+WARNING 2018-11-07 16:53:59,659 base 152 Not Found: /categories/157/
+WARNING 2018-11-07 16:53:59,673 basehttp 124 "GET /categories/157/ HTTP/1.1" 404 10968
+INFO 2018-11-07 16:53:59,835 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-07 16:53:59,953 basehttp 124 "GET /categories/157/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 452
+INFO 2018-11-07 16:54:03,905 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-07 16:54:05,495 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-11-07 16:54:07,924 basehttp 124 "GET /cart/ HTTP/1.1" 200 213
+INFO 2018-11-07 16:54:09,885 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 224
+INFO 2018-11-07 16:54:09,920 basehttp 124 "GET /addresses/ HTTP/1.1" 200 289
+INFO 2018-11-07 16:54:15,695 basehttp 124 "POST /orders/ HTTP/1.1" 201 38
+INFO 2018-11-07 16:54:17,364 basehttp 124 "OPTIONS /orders/20181107085415000000002/payment/ HTTP/1.1" 200 0
+INFO 2018-11-07 16:54:17,910 basehttp 124 "GET /orders/20181107085415000000002/payment/ HTTP/1.1" 200 872
+INFO 2018-11-07 16:59:36,248 basehttp 124 "OPTIONS /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 200 0
+INFO 2018-11-07 16:59:37,001 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 200 43
+INFO 2018-11-07 17:22:10,314 basehttp 124 "OPTIONS /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 200 0
+ERROR 2018-11-07 17:22:10,835 exception 135 Internal Server Error: /payment/status/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/payments/views.py", line 116, in put
+    order = OrderInfo.objects.get(order_id=order_id, status=OrderInfo.ORDER_STATUS_ENUM['UNPAID'])
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+orders.models.DoesNotExist: OrderInfo matching query does not exist.
+ERROR 2018-11-07 17:22:11,335 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 500 25075
+ERROR 2018-11-07 17:22:31,169 exceptions 28 [<payments.views.PaymentStatusView object at 0x7f3f164179e8>] (1062, "Duplicate entry '2018110722001405160500415923' for key 'trade_id'")
+ERROR 2018-11-07 17:22:31,183 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 507 35
+ERROR 2018-11-07 17:26:28,016 exceptions 28 [<payments.views.PaymentStatusView object at 0x7fd617d7d080>] (1062, "Duplicate entry '2018110722001405160500415923' for key 'trade_id'")
+ERROR 2018-11-07 17:26:28,026 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 507 35
+ERROR 2018-11-07 17:27:34,590 exceptions 28 [<payments.views.PaymentStatusView object at 0x7f93cc055e48>] (1062, "Duplicate entry '2018110722001405160500415923' for key 'trade_id'")
+ERROR 2018-11-07 17:27:34,602 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 507 35
+ERROR 2018-11-07 17:28:16,936 exceptions 28 [<payments.views.PaymentStatusView object at 0x7fe6ff31fef0>] (1062, "Duplicate entry '2018110722001405160500415923' for key 'trade_id'")
+ERROR 2018-11-07 17:28:16,948 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 507 35
+ERROR 2018-11-07 17:29:58,020 exceptions 28 [<payments.views.PaymentStatusView object at 0x7fe6ff297358>] (1062, "Duplicate entry '2018110722001405160500415923' for key 'trade_id'")
+ERROR 2018-11-07 17:29:58,021 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 507 35
+ERROR 2018-11-07 17:30:11,714 exceptions 28 [<payments.views.PaymentStatusView object at 0x7fe6ff279cc0>] (1062, "Duplicate entry '2018110722001405160500415923' for key 'trade_id'")
+ERROR 2018-11-07 17:30:11,742 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 507 35
+INFO 2018-11-07 17:32:37,614 basehttp 124 "OPTIONS /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 200 0
+ERROR 2018-11-07 17:32:38,159 exceptions 28 [<payments.views.PaymentStatusView object at 0x7f3452acd390>] (1062, "Duplicate entry '2018110722001405160500415923' for key 'trade_id'")
+ERROR 2018-11-07 17:32:38,176 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 507 35
+ERROR 2018-11-07 17:34:03,673 exceptions 28 [<payments.views.PaymentStatusView object at 0x7f307b7dee48>] (1062, "Duplicate entry '2018110722001405160500415923' for key 'trade_id'")
+ERROR 2018-11-07 17:34:03,685 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 507 35
+ERROR 2018-11-07 17:34:44,885 exceptions 28 [<payments.views.PaymentStatusView object at 0x7f1ab588f0f0>] (1062, "Duplicate entry '2018110722001405160500415923' for key 'trade_id'")
+ERROR 2018-11-07 17:34:44,896 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 507 35
+ERROR 2018-11-07 17:37:45,140 exceptions 28 [<payments.views.PaymentStatusView object at 0x7f31f0f480b8>] (1062, "Duplicate entry '2018110722001405160500415923' for key 'trade_id'")
+ERROR 2018-11-07 17:37:45,154 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 507 35
+ERROR 2018-11-07 17:39:00,978 exceptions 28 [<payments.views.PaymentStatusView object at 0x7fb88b8eacc0>] (1062, "Duplicate entry '2018110722001405160500415923' for key 'trade_id'")
+ERROR 2018-11-07 17:39:00,992 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 507 35
+INFO 2018-11-07 17:41:55,035 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 200 43
+INFO 2018-11-07 17:45:43,594 basehttp 124 "OPTIONS /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 200 0
+ERROR 2018-11-07 17:45:44,142 exception 135 Internal Server Error: /payment/status/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduomall/ManyBeautifulMall/ManyBeautiful/ManyBeautifulMall/apps/payments/views.py", line 120, in put
+    order.save()
+AttributeError: 'QuerySet' object has no attribute 'save'
+ERROR 2018-11-07 17:45:44,378 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 500 24631
+INFO 2018-11-07 17:50:18,294 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20181107085415000000002&method=alipay.trade.page.pay.return&total_amount=11398.00&sign=b4BjHdfodbVK93O4%2FvvwcyB%2Fo%2BYhevnBfPCSuKXRkX70kYYrQgFkYRkWmG%2FAUZPFZMNTiV%2BoKiorNYA%2FgPJj00Ry7OZYjnfLXg5AWHtWyuV8v9FZAqZuqHRDB8RNVQGa2da7l9Mh8x%2FAhlF4LIGgdu13jy4ai9uhdUL3TTrYd8pfer8OpnNAWoCeyILgzJGThjTkOTZFh8oiiZj52M%2Ba15j2XCszUXkIkKL8ru5Ow6St3VFI4MNeEjlao2654q1haGvr3wwyWFH4ha4dZlerAdx11GrtgCuBjEGx7lQHycsBKI5mn1No%2BlG9D%2FN9U1M0rfQJ9UhLDkHLlzb3ses9%2Fg%3D%3D&trade_no=2018110722001405160500415923&auth_app_id=2016092000555904&version=1.0&app_id=2016092000555904&sign_type=RSA2&seller_id=2088102176491113&timestamp=2018-11-07+16%3A59%3A35 HTTP/1.1" 200 43
+INFO 2018-11-07 17:57:49,204 basehttp 124 "GET /xadmin/goods/goodscategory/ HTTP/1.1" 200 154774
+INFO 2018-11-07 17:57:51,477 basehttp 124 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:51,489 basehttp 124 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:51,490 basehttp 124 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:51,490 basehttp 124 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:51,493 basehttp 124 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:51,507 basehttp 124 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:51,528 basehttp 124 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:51,552 basehttp 124 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:51,912 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:51,918 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:51,918 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:51,925 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:51,934 basehttp 124 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:52,106 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:52,133 basehttp 124 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:52,135 basehttp 124 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:52,136 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:52,137 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:52,143 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:52,175 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:52,178 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:52,183 basehttp 124 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:52,195 basehttp 124 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2018-11-07 17:57:52,200 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 18:02:18,949 basehttp 124 "GET /xadmin/ HTTP/1.1" 200 17525
+INFO 2018-11-07 18:02:19,156 basehttp 124 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:19,182 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:19,186 basehttp 124 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:19,436 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 18:02:20,179 basehttp 124 "GET /xadmin/goods/goodscategory/ HTTP/1.1" 200 154774
+INFO 2018-11-07 18:02:24,090 basehttp 124 "GET /xadmin/goods/goodscategory/ HTTP/1.1" 200 154774
+INFO 2018-11-07 18:02:24,256 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 18:02:28,109 basehttp 124 "GET /xadmin/goods/goodscategory/ HTTP/1.1" 200 154774
+INFO 2018-11-07 18:02:28,161 basehttp 124 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,163 basehttp 124 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,164 basehttp 124 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,171 basehttp 124 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,172 basehttp 124 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,225 basehttp 124 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,258 basehttp 124 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,270 basehttp 124 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,332 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,354 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,371 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,377 basehttp 124 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,407 basehttp 124 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,410 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,413 basehttp 124 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,454 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,455 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,473 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 18:02:28,492 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,508 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,513 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,530 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,555 basehttp 124 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:28,558 basehttp 124 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:02:39,556 basehttp 124 "POST /xadmin/settings/user HTTP/1.1" 200 0
+INFO 2018-11-07 18:02:40,268 basehttp 124 "GET /static/xadmin/css/themes/bootstrap-theme.css HTTP/1.1" 200 19791
+INFO 2018-11-07 18:02:48,360 basehttp 124 "POST /xadmin/settings/user HTTP/1.1" 200 0
+INFO 2018-11-07 18:02:58,196 basehttp 124 "POST /xadmin/settings/user HTTP/1.1" 200 0
+INFO 2018-11-07 18:03:02,740 basehttp 124 "POST /xadmin/settings/user HTTP/1.1" 200 0
+INFO 2018-11-07 18:03:09,265 basehttp 124 "POST /xadmin/settings/user HTTP/1.1" 200 0
+INFO 2018-11-07 18:03:14,334 basehttp 124 "POST /xadmin/settings/user HTTP/1.1" 200 0
+INFO 2018-11-07 18:03:25,646 basehttp 124 "POST /xadmin/settings/user HTTP/1.1" 200 0
+INFO 2018-11-07 18:03:41,052 basehttp 124 "GET /xadmin/goods/goodscategory/555/update/ HTTP/1.1" 200 42294
+INFO 2018-11-07 18:03:42,014 basehttp 124 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 304 0
+INFO 2018-11-07 18:03:42,016 basehttp 124 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 304 0
+INFO 2018-11-07 18:03:42,018 basehttp 124 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 304 0
+INFO 2018-11-07 18:03:42,304 basehttp 124 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:03:42,308 basehttp 124 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:03:42,323 basehttp 124 "GET /static/xadmin/vendor/select2/select2_locale_zh-hans.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:03:42,344 basehttp 124 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:03:42,357 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 304 0
+INFO 2018-11-07 18:03:43,003 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 18:03:56,411 basehttp 124 "GET /xadmin/goods/goodscategory/ HTTP/1.1" 200 154776
+INFO 2018-11-07 18:04:05,421 basehttp 124 "GET /xadmin/goods/goodscategory/554/update/ HTTP/1.1" 200 42270
+INFO 2018-11-07 18:04:05,611 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 18:04:10,703 basehttp 124 "GET /xadmin/goods/goodscategory/ HTTP/1.1" 200 154776
+INFO 2018-11-07 18:04:13,336 basehttp 124 "GET /xadmin/goods/goods/ HTTP/1.1" 200 33089
+INFO 2018-11-07 18:04:13,740 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 18:04:18,033 basehttp 124 "GET /xadmin/goods/goods/3/update/ HTTP/1.1" 200 95166
+INFO 2018-11-07 18:04:18,216 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 18:04:18,356 basehttp 124 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 200 2039
+INFO 2018-11-07 18:04:18,451 basehttp 124 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 690627
+INFO 2018-11-07 18:04:21,081 basehttp 124 "GET /static/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 200 338
+INFO 2018-11-07 18:04:21,218 basehttp 124 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 200 18818
+INFO 2018-11-07 18:04:21,237 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 200 46921
+INFO 2018-11-07 18:04:21,337 basehttp 124 "GET /static/ckeditor/ckeditor/styles.js?t=I3I8 HTTP/1.1" 200 5583
+INFO 2018-11-07 18:04:21,601 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css HTTP/1.1" 200 1306
+INFO 2018-11-07 18:04:21,605 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1082
+INFO 2018-11-07 18:04:21,611 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+INFO 2018-11-07 18:04:21,622 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css HTTP/1.1" 200 381
+INFO 2018-11-07 18:04:21,624 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css HTTP/1.1" 200 419
+INFO 2018-11-07 18:04:21,721 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=95e5d83 HTTP/1.1" 200 12421
+INFO 2018-11-07 18:04:21,931 basehttp 124 "GET /static/ckeditor/ckeditor/contents.css?t=I3I8 HTTP/1.1" 200 2954
+INFO 2018-11-07 18:04:27,865 basehttp 124 "GET /xadmin/goods/brand/ HTTP/1.1" 200 30263
+INFO 2018-11-07 18:04:28,420 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 18:04:31,731 basehttp 124 "GET /xadmin/goods/goodsspecification/ HTTP/1.1" 200 37634
+INFO 2018-11-07 18:04:31,957 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
+INFO 2018-11-07 18:15:47,663 basehttp 124 "GET /xadmin/goods/skuimage/ HTTP/1.1" 200 45594
+INFO 2018-11-07 18:15:48,009 basehttp 124 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4753
